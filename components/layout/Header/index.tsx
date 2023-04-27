@@ -1,3 +1,5 @@
+import { Text } from '@chakra-ui/react'
+
 import ContactMe from '@/components/ContactMe'
 import SiteNavigation from '@/components/SiteNavigation'
 
@@ -5,8 +7,8 @@ export default function Header() {
     return (
         <header>
             <div>
-                <p>Fernando Nagase</p>
-                <p>Engenheiro de Software</p>
+                <Text>Fernando Nagase</Text>
+                <Text>Engenheiro de Software</Text>
             </div>
             <SiteNavigation />
             <ContactMe />

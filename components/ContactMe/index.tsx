@@ -1,19 +1,28 @@
+import { Link, ListItem, UnorderedList } from '@chakra-ui/react'
+
 export default function ContactMe() {
     return (
         <address>
-            <ul>
-                <li>
-                    <a href="https://linkedin.com/in/fernandonagase">
+            <UnorderedList>
+                <ListItem>
+                    <Link
+                        href="https://linkedin.com/in/fernandonagase"
+                        isExternal
+                    >
                         LinkedIn
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/fernandonagase">GitHub</a>
-                </li>
-                <li>
-                    <a href="mailto:fernando@ngsfer.com">E-mail</a>
-                </li>
-            </ul>
+                    </Link>
+                </ListItem>
+                <ListItem>
+                    <Link href="https://github.com/fernandonagase" isExternal>
+                        GitHub
+                    </Link>
+                </ListItem>
+                <ListItem>
+                    <Link href="mailto:fernando@ngsfer.com" isExternal>
+                        E-mail
+                    </Link>
+                </ListItem>
+            </UnorderedList>
         </address>
     )
 }
