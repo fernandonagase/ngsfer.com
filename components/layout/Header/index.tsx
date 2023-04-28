@@ -7,8 +7,8 @@ export default function Header() {
     return (
         <header>
             <div>
-                <Text>Fernando Nagase</Text>
-                <Text>Engenheiro de Software</Text>
+                <Text textStyle="title">Fernando Nagase</Text>
+                <Text textStyle="body">Engenheiro de Software</Text>
             </div>
             <SiteNavigation />
             <ContactMe />

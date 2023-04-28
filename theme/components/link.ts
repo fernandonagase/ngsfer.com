@@ -5,6 +5,9 @@ export default defineStyleConfig({
         underline: {
             textDecoration: 'underline',
         },
+        nounderline: {
+            textDecoration: 'none',
+        },
     },
     defaultProps: {
         variant: 'underline',

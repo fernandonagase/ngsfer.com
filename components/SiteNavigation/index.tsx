@@ -1,29 +1,23 @@
-import { Link, ListItem, UnorderedList } from '@chakra-ui/react'
-import NextLink from 'next/link'
+import { ListItem, UnorderedList } from '@chakra-ui/react'
+import NavigationItem from './NavigationItem'
 
 export default function SiteNavigation() {
     return (
         <nav>
             <UnorderedList>
                 <ListItem>
-                    <Link href="/" as={NextLink}>
-                        Início
-                    </Link>
+                    <NavigationItem location="/">Início</NavigationItem>
                 </ListItem>
                 <ListItem>
-                    <Link href="/portfolio" as={NextLink}>
+                    <NavigationItem location="/portfolio">
                         Portfólio
-                    </Link>
+                    </NavigationItem>
                 </ListItem>
                 <ListItem>
-                    <Link href="/blog" as={NextLink}>
-                        Blog
-                    </Link>
+                    <NavigationItem location="/blog">Blog</NavigationItem>
                 </ListItem>
                 <ListItem>
-                    <Link href="/sobre" as={NextLink}>
-                        Sobre mim
-                    </Link>
+                    <NavigationItem location="/sobre">Sobre mim</NavigationItem>
                 </ListItem>
             </UnorderedList>
         </nav>
