@@ -9,7 +9,11 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Início - Fernando Nagase</title>
+                <title>Sou o Fernando Nagase, muito prazer!</title>
+                <meta
+                    name="description"
+                    content="Este é o meu site profissional, onde apresento a minha jornada como engenheiro de software. Aqui, você poderá conhecer mais sobre mim, sobre minhas competências e sobre minhas experiências de aprendizado."
+                />
             </Head>
 
             <Container>
