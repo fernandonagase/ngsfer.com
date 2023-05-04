@@ -13,7 +13,13 @@ export default function Home() {
             </Head>
 
             <Container>
-                <Heading level="h1">Sou o Fernando, muito prazer!</Heading>
+                <Heading level="h1">
+                    Sou o{' '}
+                    <Box as="span" color="primary.400">
+                        Fernando
+                    </Box>
+                    , muito prazer!
+                </Heading>
                 <BodyText>
                     Sou graduado em Engenharia de Software pela Universidade de
                     Ribeirão Preto (Unaerp) e, atualmente, dedico os meus

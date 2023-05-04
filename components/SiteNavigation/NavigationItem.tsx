@@ -14,7 +14,7 @@ export default function NavigationItem({
     return (
         <Link
             href={location}
-            variant="nounderline"
+            variant="navigation"
             textStyle="body"
             as={NextLink}
         >
