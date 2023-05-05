@@ -2,13 +2,21 @@ import { Text } from '@chakra-ui/react'
 
 import ContactMe from '@/components/ContactMe'
 import SiteNavigation from '@/components/SiteNavigation'
+import { Poppins } from 'next/font/google'
+
+const poppins = Poppins({
+    weight: ['700'],
+    subsets: ['latin'],
+})
 
 export default function Header() {
     return (
         <header>
             <div>
-                <Text textStyle="title">Fernando Nagase</Text>
-                <Text textStyle="body">Engenheiro de Software</Text>
+                <Text textStyle="lg" className={poppins.className}>
+                    Fernando Nagase
+                </Text>
+                <Text textStyle="md">Engenheiro de Software</Text>
             </div>
             <SiteNavigation />
             <ContactMe />

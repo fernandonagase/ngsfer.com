@@ -8,7 +8,7 @@ type ContactItemProps = {
 
 export default function ContactItem({ children, url }: ContactItemProps) {
     return (
-        <Link href={url} isExternal variant="navigation" textStyle="body">
+        <Link href={url} isExternal variant="navigation" textStyle="md">
             {children}
         </Link>
     )

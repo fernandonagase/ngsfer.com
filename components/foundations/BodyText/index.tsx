@@ -6,5 +6,9 @@ type BodyTextProps = {
 }
 
 export default function BodyText({ children }: BodyTextProps) {
-    return <Text textStyle="body">{children}</Text>
+    return (
+        <Text textStyle="md" marginBlockEnd="1x">
+            {children}
+        </Text>
+    )
 }
