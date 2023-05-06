@@ -1,8 +1,8 @@
-import { Text } from '@chakra-ui/react'
+import { Box, Text, useBreakpointValue } from '@chakra-ui/react'
+import { Poppins } from 'next/font/google'
 
 import ContactMe from '@/components/ContactMe'
 import SiteNavigation from '@/components/SiteNavigation'
-import { Poppins } from 'next/font/google'
 
 const poppins = Poppins({
     weight: ['700'],
@@ -10,16 +10,32 @@ const poppins = Poppins({
 })
 
 export default function Header() {
+    const nameSize = useBreakpointValue({
+        base: 'md',
+        sm: 'lg',
+    })
+    const jobSize = useBreakpointValue({
+        base: 'sm',
+        sm: 'md',
+    })
+
     return (
-        <header>
+        <Box as="header" px={['1xSm', '1x']} py="1xSm">
             <div>
-                <Text textStyle="lg" className={poppins.className}>
+                <Text
+                    textStyle={nameSize}
+                    fontWeight="700"
+                    lineHeight="normal"
+                    className={poppins.className}
+                >
                     Fernando Nagase
                 </Text>
-                <Text textStyle="md">Engenheiro de Software</Text>
+                <Text textStyle={jobSize} lineHeight="normal">
+                    Engenheiro de Software
+                </Text>
             </div>
             <SiteNavigation />
             <ContactMe />
-        </header>
+        </Box>
     )
 }

@@ -3,7 +3,7 @@ import { Poppins } from 'next/font/google'
 import { ReactNode } from 'react'
 
 const textStyles = {
-    h1: '2xl',
+    h1: '3xl',
     h2: 'xl',
     h3: 'lg',
 }
@@ -25,7 +25,7 @@ export default function Heading({ children, level }: HeadingProps) {
             textStyle={textStyles[level]}
             className={poppins.className}
             fontWeight="700"
-            marginBlockEnd="1x"
+            marginBlockEnd={['2xSm', '2x']}
         >
             {children}
         </Box>
