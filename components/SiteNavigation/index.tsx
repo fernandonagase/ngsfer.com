@@ -1,10 +1,10 @@
-import { ListItem, UnorderedList } from '@chakra-ui/react'
+import { List, ListItem } from '@chakra-ui/react'
 import NavigationItem from './NavigationItem'
 
 export default function SiteNavigation() {
     return (
         <nav>
-            <UnorderedList>
+            <List spacing="1xSm">
                 <ListItem>
                     <NavigationItem location="/">Início</NavigationItem>
                 </ListItem>
@@ -19,7 +19,7 @@ export default function SiteNavigation() {
                 <ListItem>
                     <NavigationItem location="/sobre">Sobre mim</NavigationItem>
                 </ListItem>
-            </UnorderedList>
+            </List>
         </nav>
     )
 }

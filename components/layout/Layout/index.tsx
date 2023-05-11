@@ -11,7 +11,7 @@ export default function Layout({ children }: LayoutProps) {
     return (
         <>
             <Header />
-            <Container as="main" px={0} mx="1xSm">
+            <Container as="main" px="2xSm">
                 {children}
             </Container>
         </>

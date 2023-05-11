@@ -1,41 +1,50 @@
-import { Box, Text, useBreakpointValue } from '@chakra-ui/react'
-import { Poppins } from 'next/font/google'
+import {
+    Box,
+    Hide,
+    IconButton,
+    Stack,
+    useBreakpointValue,
+    useDisclosure,
+} from '@chakra-ui/react'
+import { HiBars2 } from 'react-icons/hi2'
 
-import ContactMe from '@/components/ContactMe'
-import SiteNavigation from '@/components/SiteNavigation'
-
-const poppins = Poppins({
-    weight: ['700'],
-    subsets: ['latin'],
-})
+import Logo from '@/components/Logo'
+import Menu from '@/components/Menu'
+import useRouteChange from '@/hooks/useRouteChange'
 
 export default function Header() {
-    const nameSize = useBreakpointValue({
-        base: 'md',
-        sm: 'lg',
+    const isLargerThanSm = useBreakpointValue({
+        base: false,
+        sm: true,
     })
-    const jobSize = useBreakpointValue({
-        base: 'sm',
-        sm: 'md',
-    })
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    useRouteChange(onClose)
 
     return (
-        <Box as="header" px={['1xSm', '1x']} py="1xSm">
-            <div>
-                <Text
-                    textStyle={nameSize}
-                    fontWeight="700"
-                    lineHeight="normal"
-                    className={poppins.className}
-                >
-                    Fernando Nagase
-                </Text>
-                <Text textStyle={jobSize} lineHeight="normal">
-                    Engenheiro de Software
-                </Text>
-            </div>
-            <SiteNavigation />
-            <ContactMe />
+        <Box as="header" mb="4xSm">
+            <Stack
+                direction="row"
+                align="center"
+                justify="space-between"
+                px={['2xSm', '2x']}
+                py="2xSm"
+            >
+                <Logo />
+                <Hide above="sm">
+                    <IconButton
+                        aria-label="Abrir Menu"
+                        icon={<HiBars2 />}
+                        onClick={onOpen}
+                        size="lg"
+                        fontSize="3xl"
+                        variant="ghost"
+                        color="body-text"
+                    />
+                </Hide>
+            </Stack>
+            {(isLargerThanSm || isOpen) && (
+                <Menu isOpen={isOpen} onClose={onClose} />
+            )}
         </Box>
     )
 }
