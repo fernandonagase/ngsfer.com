@@ -15,12 +15,12 @@ import ContactMe from '../ContactMe'
 import SiteNavigation from '../SiteNavigation'
 import Logo from '../Logo'
 
-type MenuProps = {
+type MobileMenuProps = {
     isOpen: boolean
     onClose: () => void
 }
 
-export default function Menu({ isOpen, onClose }: MenuProps) {
+export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     return (
         <Modal isOpen={isOpen} onClose={onClose} size="full">
             <ModalOverlay />

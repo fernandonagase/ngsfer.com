@@ -26,14 +26,14 @@ export default function Logo() {
             <Text
                 textStyle={nameSize}
                 fontWeight="700"
-                lineHeight="normal"
+                lineHeight="short"
                 className={poppins.className}
             >
                 Fernando Nagase
             </Text>
             <Text
                 textStyle={jobSize}
-                lineHeight="normal"
+                lineHeight="none"
                 className={gelasio.className}
             >
                 Engenheiro de Software

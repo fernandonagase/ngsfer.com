@@ -13,9 +13,9 @@ export default function ContactItem({ children, url, name }: ContactItemProps) {
             href={url}
             isExternal
             variant="navigation"
-            fontSize="3xl"
+            fontSize={['3xl', '2xl']}
             display="inline-block"
-            padding={2}
+            padding={[2, 0]}
             aria-label={name}
         >
             {children}

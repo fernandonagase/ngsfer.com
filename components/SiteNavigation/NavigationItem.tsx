@@ -15,11 +15,11 @@ export default function NavigationItem({
         <Link
             href={location}
             variant="navigation"
-            textStyle="lg"
+            textStyle={['lg', 'md']}
             as={NextLink}
             display="inline-block"
             width="100%"
-            py={4}
+            py={[4, 0]}
         >
             {children}
         </Link>

@@ -6,6 +6,7 @@ import styles from './styles'
 import colors from './foundations/colors'
 import space from './foundations/spacing'
 import typography from './foundations/typography'
+import sizes from './foundations/sizes'
 
 import Container from './components/container'
 import Link from './components/link'
@@ -16,6 +17,7 @@ const overrides = {
     space,
     textStyles: typography,
     colors,
+    sizes,
     components: {
         Container,
         Link,
