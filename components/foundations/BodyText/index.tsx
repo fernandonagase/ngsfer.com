@@ -7,7 +7,7 @@ type BodyTextProps = {
 
 export default function BodyText({ children }: BodyTextProps) {
     return (
-        <Text textStyle="md" marginBlockEnd={['2xSm', '2x']}>
+        <Text textStyle="md" marginBlockEnd={['2xSm', null, null, '2x']}>
             {children}
         </Text>
     )

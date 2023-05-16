@@ -14,11 +14,11 @@ const gelasio = Gelasio({
 export default function Logo() {
     const nameSize = useBreakpointValue({
         base: 'md',
-        sm: 'lg',
+        lg: 'lg',
     })
     const jobSize = useBreakpointValue({
         base: 'sm',
-        sm: 'md',
+        lg: 'md',
     })
 
     return (

@@ -4,7 +4,7 @@ import NavigationItem from './NavigationItem'
 export default function SiteNavigation() {
     return (
         <nav>
-            <List spacing={['1xSm', '1x']}>
+            <List spacing={['1xSm', null, null, '1x']}>
                 <ListItem>
                     <NavigationItem location="/">Início</NavigationItem>
                 </ListItem>

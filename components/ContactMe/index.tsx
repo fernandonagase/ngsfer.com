@@ -7,7 +7,11 @@ import ContactItem from './ContactItem'
 export default function ContactMe() {
     return (
         <address>
-            <List display="flex" gap={['2xSm', '1x']} ml={[-2, 0]}>
+            <List
+                display="flex"
+                gap={['2xSm', null, null, '1x']}
+                ml={[-2, null, null, 0]}
+            >
                 <ListItem>
                     <ContactItem
                         url="https://linkedin.com/in/fernandonagase"

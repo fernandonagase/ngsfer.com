@@ -25,7 +25,7 @@ export default function Heading({ children, level }: HeadingProps) {
             textStyle={textStyles[level]}
             className={poppins.className}
             fontWeight="700"
-            marginBlockEnd={['2xSm', '2x']}
+            marginBlockEnd={['2xSm', null, null, '2x']}
         >
             {children}
         </Box>

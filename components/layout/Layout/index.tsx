@@ -15,9 +15,9 @@ type LayoutProps = {
 }
 
 export default function Layout({ children }: LayoutProps) {
-    const isLargerThanSm = useBreakpointValue({
+    const isLargerThanLg = useBreakpointValue({
         base: false,
-        sm: true,
+        lg: true,
     })
 
     const { sizes } = useTheme()
@@ -25,7 +25,7 @@ export default function Layout({ children }: LayoutProps) {
     return (
         <>
             <Header />
-            {isLargerThanSm ? (
+            {isLargerThanLg ? (
                 <Flex justify="center">
                     <HStack align="flex-start" px="4x">
                         <SideBar />
