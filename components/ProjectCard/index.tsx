@@ -1,12 +1,4 @@
-import {
-    Box,
-    Card,
-    CardBody,
-    Heading,
-    LinkBox,
-    LinkOverlay,
-    Text,
-} from '@chakra-ui/react'
+import { Heading, LinkBox, LinkOverlay, Text } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
 import Skills from '../Skills'
@@ -25,23 +17,14 @@ export default function ProjectCard({
     skills,
 }: ProjectCardProps) {
     return (
-        <LinkBox>
-            <Card as="article">
-                <CardBody>
-                    <Box mb="1xSm">
-                        <Heading as="h2">
-                            <LinkOverlay
-                                href={`portfolio/${slug}`}
-                                as={NextLink}
-                            >
-                                {name}
-                            </LinkOverlay>
-                        </Heading>
-                        <Text noOfLines={2}>{description}</Text>
-                    </Box>
-                    <Skills skills={skills} />
-                </CardBody>
-            </Card>
+        <LinkBox as="article">
+            <Heading as="h2">
+                <LinkOverlay href={`portfolio/${slug}`} as={NextLink}>
+                    {name}
+                </LinkOverlay>
+            </Heading>
+            <Text noOfLines={2}>{description}</Text>
+            <Skills skills={skills} />
         </LinkBox>
     )
 }

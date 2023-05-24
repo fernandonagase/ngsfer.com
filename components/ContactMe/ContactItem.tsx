@@ -4,20 +4,11 @@ import { ReactNode } from 'react'
 type ContactItemProps = {
     children: ReactNode
     url: string
-    name?: string
 }
 
-export default function ContactItem({ children, url, name }: ContactItemProps) {
+export default function ContactItem({ children, url }: ContactItemProps) {
     return (
-        <Link
-            href={url}
-            isExternal
-            variant="navigation"
-            fontSize={['3xl', null, null, '2xl']}
-            display="inline-block"
-            padding={[2, null, null, 0]}
-            aria-label={name}
-        >
+        <Link href={url} isExternal>
             {children}
         </Link>
     )

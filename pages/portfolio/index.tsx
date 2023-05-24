@@ -1,9 +1,7 @@
 import ProjectCard from '@/components/ProjectCard'
-import BodyText from '@/components/foundations/BodyText'
-import Heading from '@/components/foundations/Heading'
 import { ProjectSummary, getAllProjects } from '@/util/portfolio'
 
-import { Stack } from '@chakra-ui/react'
+import { Heading, Stack, Text } from '@chakra-ui/react'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 
@@ -30,9 +28,10 @@ export default function Portfolio({
                     content="Listagem com detalhes sobre meus projetos de software. Aqui, você poderá conferir minhas competências como desenvolvedor."
                 />
             </Head>
-            <Heading level="h1">Portfólio</Heading>
+
+            <Heading>Portfólio</Heading>
             {projects.length > 0 ? (
-                <Stack spacing="1xSm">
+                <Stack>
                     {projects.map((project) => (
                         <ProjectCard
                             key={project.slug}
@@ -44,7 +43,7 @@ export default function Portfolio({
                     ))}
                 </Stack>
             ) : (
-                <BodyText>Nenhum projeto publicado</BodyText>
+                <Text>Nenhum projeto publicado</Text>
             )}
         </>
     )

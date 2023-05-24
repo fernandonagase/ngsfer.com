@@ -1,36 +1,24 @@
-import { Icon, List, ListItem } from '@chakra-ui/react'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import { HiMail } from 'react-icons/hi'
+import { List, ListItem } from '@chakra-ui/react'
 
 import ContactItem from './ContactItem'
 
 export default function ContactMe() {
     return (
         <address>
-            <List
-                display="flex"
-                gap={['2xSm', null, null, '1x']}
-                ml={[-2, null, null, 0]}
-            >
+            <List>
                 <ListItem>
-                    <ContactItem
-                        url="https://linkedin.com/in/fernandonagase"
-                        name="LinkedIn"
-                    >
-                        <Icon as={FaLinkedinIn} />
+                    <ContactItem url="https://linkedin.com/in/fernandonagase">
+                        LinkedIn
                     </ContactItem>
                 </ListItem>
                 <ListItem>
-                    <ContactItem
-                        url="https://github.com/fernandonagase"
-                        name="GitHub"
-                    >
-                        <Icon as={FaGithub} />
+                    <ContactItem url="https://github.com/fernandonagase">
+                        GitHub
                     </ContactItem>
                 </ListItem>
                 <ListItem>
-                    <ContactItem url="mailto:fernando@ngsfer.com" name="E-mail">
-                        <Icon as={HiMail} />
+                    <ContactItem url="mailto:fernando@ngsfer.com">
+                        E-mail
                     </ContactItem>
                 </ListItem>
             </List>

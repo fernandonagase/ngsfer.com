@@ -1,17 +1,5 @@
-import { Box } from '@chakra-ui/react'
-import { Poppins } from 'next/font/google'
+import { Heading as ChakraHeading } from '@chakra-ui/react'
 import { ReactNode } from 'react'
-
-const textStyles = {
-    h1: '3xl',
-    h2: 'xl',
-    h3: 'lg',
-}
-
-const poppins = Poppins({
-    weight: ['700'],
-    subsets: ['latin'],
-})
 
 type HeadingProps = {
     children: ReactNode
@@ -19,15 +7,5 @@ type HeadingProps = {
 }
 
 export default function Heading({ children, level }: HeadingProps) {
-    return (
-        <Box
-            as={level}
-            textStyle={textStyles[level]}
-            className={poppins.className}
-            fontWeight="700"
-            marginBlockEnd={['2xSm', null, null, '2x']}
-        >
-            {children}
-        </Box>
-    )
+    return <ChakraHeading as={level}>{children}</ChakraHeading>
 }

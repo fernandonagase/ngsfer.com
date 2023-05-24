@@ -12,15 +12,7 @@ export default function NavigationItem({
     location,
 }: NavigationItemProps) {
     return (
-        <Link
-            href={location}
-            variant="navigation"
-            textStyle={['lg', null, null, 'md']}
-            as={NextLink}
-            display="inline-block"
-            width="100%"
-            py={[4, null, null, 0]}
-        >
+        <Link href={location} as={NextLink}>
             {children}
         </Link>
     )

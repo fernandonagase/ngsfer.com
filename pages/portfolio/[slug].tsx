@@ -1,10 +1,8 @@
-import { Link, VStack } from '@chakra-ui/react'
+import { Heading, Link, Text } from '@chakra-ui/react'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 
 import Skills from '@/components/Skills'
-import BodyText from '@/components/foundations/BodyText'
-import Heading from '@/components/foundations/Heading'
 import { Project, getPaths, getProjectFrom } from '@/util/portfolio'
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -47,23 +45,24 @@ export default function Project(
                 <title>{project.name}</title>
                 <meta name="description" content={project.description} />
             </Head>
+
             <article>
-                <Heading level="h1">{project.name}</Heading>
-                <BodyText>{project.description}</BodyText>
+                <Heading as="h1">{project.name}</Heading>
+                <Text>{project.description}</Text>
                 <section>
-                    <Heading level="h2">Competências</Heading>
+                    <Heading as="h2">Competências</Heading>
                     <Skills skills={project.skills} />
                 </section>
                 <section>
-                    <Heading level="h2">Acesse o projeto</Heading>
-                    <VStack align="flex-start">
+                    <Heading as="h2">Acesse o projeto</Heading>
+                    <div>
                         <Link href={project.repositoryUrl} isExternal>
                             Repositório
                         </Link>
                         <Link href={project.previewUrl} isExternal>
                             Demonstração
                         </Link>
-                    </VStack>
+                    </div>
                 </section>
             </article>
         </>
