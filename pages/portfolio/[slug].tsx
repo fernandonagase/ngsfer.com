@@ -3,7 +3,8 @@ import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 
 import Skills from '@/components/Skills'
-import { Project, getPaths, getProjectFrom } from '@/util/portfolio'
+import { getPaths, getProjectFrom } from '@/lib/portfolio'
+import { Project } from '@/lib/portfolio/types/project'
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = await getPaths()

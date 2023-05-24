@@ -1,12 +1,12 @@
 import { ReactNode } from 'react'
 
-import Header from '../Header'
+import Header from '@/components/Header'
 
-type LayoutProps = {
+type MainLayoutProps = {
     children: ReactNode
 }
 
-export default function Layout({ children }: LayoutProps) {
+export default function MainLayout({ children }: MainLayoutProps) {
     return (
         <>
             <Header />

@@ -1,5 +1,6 @@
 import ProjectCard from '@/components/ProjectCard'
-import { ProjectSummary, getAllProjects } from '@/util/portfolio'
+import { getAllProjects } from '@/lib/portfolio'
+import { ProjectSummary } from '@/lib/portfolio/types/project-summary'
 
 import { Heading, Stack, Text } from '@chakra-ui/react'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'

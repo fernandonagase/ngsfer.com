@@ -1,21 +1,8 @@
 import { promises as fs } from 'fs'
 import path from 'path'
 
-export type Project = {
-    slug: string
-    name: string
-    description: string
-    skills: string[]
-    thumbnailUrl: string
-    repositoryUrl: string
-    previewUrl: string
-}
-export type ProjectSummary = {
-    slug: string
-    name: string
-    description: string
-    skills: string[]
-}
+import { Project } from './types/project'
+import { ProjectSummary } from './types/project-summary'
 
 const projectsDir = path.join(process.cwd(), 'content', 'portfolio')
 
