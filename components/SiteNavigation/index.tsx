@@ -4,7 +4,7 @@ import NavigationItem from './NavigationItem'
 export default function SiteNavigation() {
     return (
         <nav>
-            <List>
+            <List display="flex" gap={6}>
                 <ListItem>
                     <NavigationItem location="/">Início</NavigationItem>
                 </ListItem>

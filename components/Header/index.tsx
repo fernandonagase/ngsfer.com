@@ -1,9 +1,10 @@
 import SiteNavigation from '@/components/SiteNavigation'
+import { Box } from '@chakra-ui/react'
 
 export default function Header() {
     return (
-        <header>
+        <Box p={6} as="header" pos="sticky">
             <SiteNavigation />
-        </header>
+        </Box>
     )
 }

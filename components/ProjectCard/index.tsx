@@ -17,7 +17,7 @@ export default function ProjectCard({
     skills,
 }: ProjectCardProps) {
     return (
-        <LinkBox as="article">
+        <LinkBox as="article" mb={6}>
             <Heading as="h2">
                 <LinkOverlay href={`portfolio/${slug}`} as={NextLink}>
                     {name}

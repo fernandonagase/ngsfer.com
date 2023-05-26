@@ -30,7 +30,7 @@ export default function Portfolio({
                 />
             </Head>
 
-            <Heading>Portfólio</Heading>
+            <Heading mb={6}>Portfólio</Heading>
             {projects.length > 0 ? (
                 <Stack>
                     {projects.map((project) => (

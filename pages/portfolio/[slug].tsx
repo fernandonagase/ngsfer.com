@@ -1,4 +1,4 @@
-import { Heading, Link, Text } from '@chakra-ui/react'
+import { Box, Heading, Link, Text } from '@chakra-ui/react'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 
@@ -48,13 +48,15 @@ export default function Project(
             </Head>
 
             <article>
-                <Heading as="h1">{project.name}</Heading>
-                <Text>{project.description}</Text>
-                <section>
+                <Heading as="h1" mb={6}>
+                    {project.name}
+                </Heading>
+                <Text mb={6}>{project.description}</Text>
+                <Box mb={6} as="section">
                     <Heading as="h2">Competências</Heading>
                     <Skills skills={project.skills} />
-                </section>
-                <section>
+                </Box>
+                <Box mb={6} as="section">
                     <Heading as="h2">Acesse o projeto</Heading>
                     <div>
                         <Link href={project.repositoryUrl} isExternal>
@@ -64,7 +66,7 @@ export default function Project(
                             Demonstração
                         </Link>
                     </div>
-                </section>
+                </Box>
             </article>
         </>
     )

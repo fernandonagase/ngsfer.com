@@ -1,9 +1,10 @@
+import { Box } from '@chakra-ui/react'
 import ContactMe from '../ContactMe'
 
 export default function Footer() {
     return (
-        <footer>
+        <Box px={6} as="footer">
             <ContactMe />
-        </footer>
+        </Box>
     )
 }

@@ -13,8 +13,8 @@ export default function Home() {
                 />
             </Head>
 
-            <Heading>Sou o Fernando, muito prazer!</Heading>
-            <Text>
+            <Heading mb={6}>Sou o Fernando, muito prazer!</Heading>
+            <Text mb={6}>
                 Sou graduado em Engenharia de Software pela Universidade de
                 Ribeirão Preto (Unaerp) e, atualmente, dedico os meus esforços
                 para a área de desenvolvimento full stack para a web.
