@@ -18,12 +18,14 @@ export default function ProjectCard({
 }: ProjectCardProps) {
     return (
         <LinkBox as="article" mb="baseline-2">
-            <Heading as="h2">
+            <Heading as="h2" fontSize="3xl" lineHeight="baseline-4">
                 <LinkOverlay href={`portfolio/${slug}`} as={NextLink}>
                     {name}
                 </LinkOverlay>
             </Heading>
-            <Text noOfLines={2}>{description}</Text>
+            <Text fontSize="md" lineHeight="baseline-2" noOfLines={2}>
+                {description}
+            </Text>
             <Skills skills={skills} />
         </LinkBox>
     )

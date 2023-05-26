@@ -13,14 +13,16 @@ export default function Home() {
                 />
             </Head>
 
-            <Heading mb="baseline-2">Sou o Fernando, muito prazer!</Heading>
-            <Text mb="baseline-2">
+            <Heading fontSize="4xl" lineHeight="baseline-4" mb="baseline-2">
+                Sou o Fernando, muito prazer!
+            </Heading>
+            <Text fontSize="md" lineHeight="baseline-2" mb="baseline-2">
                 Sou graduado em Engenharia de Software pela Universidade de
                 Ribeirão Preto (Unaerp) e, atualmente, dedico os meus esforços
                 para a área de desenvolvimento full stack para a web.
             </Text>
             <nav>
-                <Text>
+                <Text fontSize="md" lineHeight="baseline-2">
                     Visite o{' '}
                     <Link href="/portfolio" as={NextLink}>
                         meu portfólio

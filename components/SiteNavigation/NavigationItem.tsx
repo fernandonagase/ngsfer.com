@@ -12,7 +12,12 @@ export default function NavigationItem({
     location,
 }: NavigationItemProps) {
     return (
-        <Link href={location} as={NextLink}>
+        <Link
+            href={location}
+            fontSize="md"
+            lineHeight="baseline-2"
+            as={NextLink}
+        >
             {children}
         </Link>
     )

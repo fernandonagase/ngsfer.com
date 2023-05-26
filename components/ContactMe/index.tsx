@@ -5,7 +5,9 @@ import ContactItem from './ContactItem'
 export default function ContactMe() {
     return (
         <div>
-            <Text>Fale comigo:</Text>
+            <Text fontSize="md" lineHeight="baseline-2">
+                Fale comigo:
+            </Text>
             <address>
                 <List display="flex" gap="baseline-2">
                     <ListItem>

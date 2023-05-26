@@ -16,7 +16,12 @@ export default function SiteNavigation() {
                 <ListItem>
                     {/* <NavigationItem location="/blog">Blog</NavigationItem> */}
                     {/* Link externo enquanto o blog estiver hospedado no HashNode */}
-                    <Link href="https://blog.ngsfer.com" isExternal>
+                    <Link
+                        href="https://blog.ngsfer.com"
+                        isExternal
+                        fontSize="md"
+                        lineHeight="baseline-2"
+                    >
                         Blog
                     </Link>
                 </ListItem>
