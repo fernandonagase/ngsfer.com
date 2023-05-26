@@ -48,15 +48,15 @@ export default function Project(
             </Head>
 
             <article>
-                <Heading as="h1" mb={6}>
+                <Heading as="h1" mb="baseline-2">
                     {project.name}
                 </Heading>
-                <Text mb={6}>{project.description}</Text>
-                <Box mb={6} as="section">
+                <Text mb="baseline-2">{project.description}</Text>
+                <Box mb="baseline-2" as="section">
                     <Heading as="h2">Competências</Heading>
                     <Skills skills={project.skills} />
                 </Box>
-                <Box mb={6} as="section">
+                <Box mb="baseline-2" as="section">
                     <Heading as="h2">Acesse o projeto</Heading>
                     <div>
                         <Link href={project.repositoryUrl} isExternal>

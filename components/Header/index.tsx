@@ -3,7 +3,7 @@ import { Box } from '@chakra-ui/react'
 
 export default function Header() {
     return (
-        <Box p={6} as="header" pos="sticky">
+        <Box p="baseline-2" as="header" pos="sticky">
             <SiteNavigation />
         </Box>
     )

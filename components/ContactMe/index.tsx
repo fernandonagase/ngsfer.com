@@ -7,7 +7,7 @@ export default function ContactMe() {
         <div>
             <Text>Fale comigo:</Text>
             <address>
-                <List display="flex" gap={6}>
+                <List display="flex" gap="baseline-2">
                     <ListItem>
                         <ContactItem url="https://linkedin.com/in/fernandonagase">
                             LinkedIn

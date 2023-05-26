@@ -12,7 +12,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
     return (
         <>
             <Header />
-            <Box px={6} my={12} as="main">
+            <Box px="baseline-2" my="baseline-4" as="main">
                 {children}
             </Box>
             <Footer />
