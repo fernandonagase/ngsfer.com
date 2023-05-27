@@ -8,7 +8,13 @@ type ContactItemProps = {
 
 export default function ContactItem({ children, url }: ContactItemProps) {
     return (
-        <Link href={url} isExternal fontSize="md" lineHeight="baseline-2">
+        <Link
+            href={url}
+            isExternal
+            fontSize="md"
+            lineHeight="baseline-2"
+            variant="navigation"
+        >
             {children}
         </Link>
     )

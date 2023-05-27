@@ -5,7 +5,7 @@ import ContactItem from './ContactItem'
 export default function ContactMe() {
     return (
         <div>
-            <Text fontSize="md" lineHeight="baseline-2">
+            <Text fontSize="md" lineHeight="baseline-2" color="fg">
                 Fale comigo:
             </Text>
             <address>

@@ -16,6 +16,7 @@ export default function NavigationItem({
             href={location}
             fontSize="md"
             lineHeight="baseline-2"
+            variant="navigation"
             as={NextLink}
         >
             {children}

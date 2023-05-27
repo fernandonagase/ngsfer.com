@@ -21,6 +21,7 @@ export default function SiteNavigation() {
                         isExternal
                         fontSize="md"
                         lineHeight="baseline-2"
+                        variant="navigation"
                     >
                         Blog
                     </Link>

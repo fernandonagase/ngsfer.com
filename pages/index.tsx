@@ -1,4 +1,4 @@
-import { Link, Heading, Text } from '@chakra-ui/react'
+import { Link, Heading, Text, Box } from '@chakra-ui/react'
 import Head from 'next/head'
 import NextLink from 'next/link'
 
@@ -13,16 +13,30 @@ export default function Home() {
                 />
             </Head>
 
-            <Heading fontSize="4xl" lineHeight="baseline-4" mb="baseline-2">
-                Sou o Fernando, muito prazer!
+            <Heading
+                fontSize="4xl"
+                lineHeight="baseline-4"
+                color="fg"
+                mb="baseline-2"
+            >
+                Sou o{' '}
+                <Box as="span" color="primary.400">
+                    Fernando
+                </Box>
+                , muito prazer!
             </Heading>
-            <Text fontSize="md" lineHeight="baseline-2" mb="baseline-2">
+            <Text
+                fontSize="md"
+                lineHeight="baseline-2"
+                color="fg"
+                mb="baseline-2"
+            >
                 Sou graduado em Engenharia de Software pela Universidade de
                 Ribeirão Preto (Unaerp) e, atualmente, dedico os meus esforços
                 para a área de desenvolvimento full stack para a web.
             </Text>
             <nav>
-                <Text fontSize="md" lineHeight="baseline-2">
+                <Text fontSize="md" lineHeight="baseline-2" color="fg">
                     Visite o{' '}
                     <Link href="/portfolio" as={NextLink}>
                         meu portfólio
