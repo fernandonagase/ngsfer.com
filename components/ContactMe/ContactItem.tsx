@@ -14,6 +14,7 @@ export default function ContactItem({ children, url }: ContactItemProps) {
             fontSize="md"
             lineHeight="baseline-2"
             variant="navigation"
+            color="primary.400"
         >
             {children}
         </Link>

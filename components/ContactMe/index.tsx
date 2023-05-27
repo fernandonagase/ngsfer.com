@@ -1,32 +1,46 @@
-import { List, ListItem, Text } from '@chakra-ui/react'
+import { Box, List, ListItem, Text } from '@chakra-ui/react'
 
 import ContactItem from './ContactItem'
+
+const contactList = [
+    {
+        name: 'LinkedIn',
+        location: 'https://linkedin.com/in/fernandonagase',
+    },
+    {
+        name: 'GitHub',
+        location: 'https://github.com/fernandonagase',
+    },
+    {
+        name: 'E-mail',
+        location: 'mailto:fernando@ngsfer.com',
+    },
+]
 
 export default function ContactMe() {
     return (
         <div>
-            <Text fontSize="md" lineHeight="baseline-2" color="fg">
+            <Text
+                fontSize="md"
+                lineHeight="baseline-2"
+                color="fg"
+                mb="baseline-1"
+            >
                 Fale comigo:
             </Text>
-            <address>
-                <List display="flex" gap="baseline-2">
-                    <ListItem>
-                        <ContactItem url="https://linkedin.com/in/fernandonagase">
-                            LinkedIn
-                        </ContactItem>
-                    </ListItem>
-                    <ListItem>
-                        <ContactItem url="https://github.com/fernandonagase">
-                            GitHub
-                        </ContactItem>
-                    </ListItem>
-                    <ListItem>
-                        <ContactItem url="mailto:fernando@ngsfer.com">
-                            E-mail
-                        </ContactItem>
-                    </ListItem>
+            <Box as="address" fontStyle="normal">
+                <List display="flex" gap="baseline-1">
+                    {contactList.map((contact) => {
+                        return (
+                            <ListItem key={contact.name}>
+                                <ContactItem url={contact.location}>
+                                    {contact.name}
+                                </ContactItem>
+                            </ListItem>
+                        )
+                    })}
                 </List>
-            </address>
+            </Box>
         </div>
     )
 }
