@@ -34,7 +34,8 @@ export default function Portfolio({
                 as="h1"
                 fontSize="4xl"
                 lineHeight="baseline-4"
-                mb="baseline-2"
+                color="fg"
+                mb="baseline-4"
             >
                 Portfólio
             </Heading>
@@ -46,12 +47,13 @@ export default function Portfolio({
                             slug={project.slug}
                             name={project.name}
                             description={project.description}
-                            skills={project.skills}
                         />
                     ))}
                 </Stack>
             ) : (
-                <Text>Nenhum projeto publicado</Text>
+                <Text color="fg" fontSize="md" lineHeight="baseline-2">
+                    Nenhum projeto publicado
+                </Text>
             )}
         </>
     )

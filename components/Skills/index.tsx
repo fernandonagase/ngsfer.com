@@ -10,7 +10,14 @@ export default function Skills(props: SkillsProps) {
     return (
         <Stack direction="row" spacing={1}>
             {skills.map((skill) => (
-                <Tag key={skill}>{skill}</Tag>
+                <Tag
+                    borderRadius="none"
+                    variant="outline"
+                    color="fg"
+                    key={skill}
+                >
+                    {skill}
+                </Tag>
             ))}
         </Stack>
     )
