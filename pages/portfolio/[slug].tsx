@@ -1,4 +1,4 @@
-import { Box, Heading, Link, Text } from '@chakra-ui/react'
+import { Box, Heading, Link, Text, VStack } from '@chakra-ui/react'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 
@@ -48,24 +48,63 @@ export default function Project(
             </Head>
 
             <article>
-                <Heading as="h1" mb="baseline-2">
+                <Heading
+                    as="h1"
+                    fontSize="4xl"
+                    lineHeight="baseline-4"
+                    mb="baseline-2"
+                    color="fg"
+                >
                     {project.name}
                 </Heading>
-                <Text mb="baseline-2">{project.description}</Text>
-                <Box mb="baseline-2" as="section">
-                    <Heading as="h2">Competências</Heading>
+                <Text
+                    fontSize="md"
+                    mb="baseline-4"
+                    lineHeight="baseline-2"
+                    color="fg"
+                >
+                    {project.description}
+                </Text>
+                <Box mb="baseline-4" as="section">
+                    <Heading
+                        as="h2"
+                        fontSize="2xl"
+                        lineHeight="baseline-3"
+                        mb="baseline-2"
+                        color="fg"
+                    >
+                        Competências
+                    </Heading>
                     <Skills skills={project.skills} />
                 </Box>
                 <Box mb="baseline-2" as="section">
-                    <Heading as="h2">Acesse o projeto</Heading>
-                    <div>
-                        <Link href={project.repositoryUrl} isExternal>
+                    <Heading
+                        as="h2"
+                        fontSize="2xl"
+                        lineHeight="baseline-3"
+                        mb="baseline-2"
+                        color="fg"
+                    >
+                        Acesse o projeto
+                    </Heading>
+                    <VStack align="flex-start" spacing="baseline-1">
+                        <Link
+                            href={project.repositoryUrl}
+                            isExternal
+                            fontSize="md"
+                            lineHeight="baseline-2"
+                        >
                             Repositório
                         </Link>
-                        <Link href={project.previewUrl} isExternal>
+                        <Link
+                            href={project.previewUrl}
+                            isExternal
+                            fontSize="md"
+                            lineHeight="baseline-2"
+                        >
                             Demonstração
                         </Link>
-                    </div>
+                    </VStack>
                 </Box>
             </article>
         </>
