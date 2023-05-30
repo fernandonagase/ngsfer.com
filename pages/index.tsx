@@ -42,7 +42,7 @@ export default function Home() {
                         meu portfólio
                     </Link>{' '}
                     para conferir minhas competências ou o{' '}
-                    <Link href="/blog" as={NextLink}>
+                    <Link href="https://blog.ngsfer.com" isExternal>
                         meu blog
                     </Link>{' '}
                     para acompanhar a minha jornada de aprendizado com
