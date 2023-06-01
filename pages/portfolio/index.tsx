@@ -32,15 +32,15 @@ export default function Portfolio({
 
             <Heading
                 as="h1"
-                fontSize="4xl"
-                lineHeight="baseline-4"
+                fontSize={['4xl', null, null, '4xl-lg']}
+                lineHeight={['baseline-4', null, null, 'baseline-5-lg']}
                 color="fg"
-                mb="baseline-4"
+                mb={['baseline-4', null, null, 'baseline-4-lg']}
             >
                 Portfólio
             </Heading>
             {projects.length > 0 ? (
-                <Stack>
+                <Stack spacing={['baseline-3', null, null, 'baseline-3-lg']}>
                     {projects.map((project) => (
                         <ProjectCard
                             key={project.slug}
@@ -51,7 +51,11 @@ export default function Portfolio({
                     ))}
                 </Stack>
             ) : (
-                <Text color="fg" fontSize="md" lineHeight="baseline-2">
+                <Text
+                    color="fg"
+                    fontSize={['md', null, null, 'md-lg']}
+                    lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
+                >
                     Nenhum projeto publicado
                 </Text>
             )}

@@ -7,8 +7,14 @@ const fonts = {
     body: gelasio.style.fontFamily,
     heading: poppins.style.fontFamily,
 }
-const fontSizes = buildTypeScale(theme.typeBaseSize, theme.typeScale)
-const lineHeights = buildBaseline(theme.baseline, 8)
+const fontSizes = {
+    ...buildTypeScale(theme.typeBaseSize, theme.typeScale),
+    ...buildTypeScale(theme.typeBaseSizeLg, theme.typeScaleLg, 'lg'),
+}
+const lineHeights = {
+    ...buildBaseline(theme.baseline, 8),
+    ...buildBaseline(theme.baselineLg, 8, 'lg'),
+}
 
 const typography = {
     fonts,

@@ -3,13 +3,20 @@ import NextLink from 'next/link'
 
 export default function Logo() {
     return (
-        <LinkBox mb="baseline-2" display="inline-block">
-            <Text fontSize="md" lineHeight="baseline-2" fontWeight="700">
+        <LinkBox mb={['baseline-2', null, 0]} display="inline-block">
+            <Text
+                fontSize={['md', null, null, 'md-lg']}
+                lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
+                fontWeight="700"
+            >
                 <LinkOverlay href="/" as={NextLink}>
                     Fernando Nagase
                 </LinkOverlay>
             </Text>
-            <Text fontSize="md" lineHeight="baseline-2">
+            <Text
+                fontSize={['md', null, null, 'md-lg']}
+                lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
+            >
                 Engenheiro de Software
             </Text>
         </LinkBox>

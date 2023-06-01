@@ -13,13 +13,13 @@ export default function ProjectCard({
     description,
 }: ProjectCardProps) {
     return (
-        <Box as="article" mb="baseline-3">
+        <Box as="article">
             <LinkBox>
                 <Heading
                     as="h2"
-                    fontSize="2xl"
+                    fontSize={['2xl', null, null, '2xl-lg']}
+                    lineHeight={['baseline-3', null, null, 'baseline-3-lg']}
                     fontWeight="600"
-                    lineHeight="baseline-3"
                     color="fg"
                 >
                     <LinkOverlay href={`portfolio/${slug}`} as={NextLink}>
@@ -27,8 +27,8 @@ export default function ProjectCard({
                     </LinkOverlay>
                 </Heading>
                 <Text
-                    fontSize="md"
-                    lineHeight="baseline-2"
+                    fontSize={['md', null, null, 'md-lg']}
+                    lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
                     noOfLines={2}
                     color="fg"
                 >

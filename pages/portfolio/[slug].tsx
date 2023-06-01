@@ -50,17 +50,17 @@ export default function Project(
             <article>
                 <Heading
                     as="h1"
-                    fontSize="4xl"
-                    lineHeight="baseline-4"
+                    fontSize={['4xl', null, null, '4xl-lg']}
+                    lineHeight={['baseline-4', null, null, 'baseline-5-lg']}
                     mb="baseline-2"
                     color="fg"
                 >
                     {project.name}
                 </Heading>
                 <Text
-                    fontSize="md"
+                    fontSize={['md', null, null, 'md-lg']}
+                    lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
                     mb="baseline-4"
-                    lineHeight="baseline-2"
                     color="fg"
                 >
                     {project.description}
@@ -68,8 +68,8 @@ export default function Project(
                 <Box mb="baseline-4" as="section">
                     <Heading
                         as="h2"
-                        fontSize="2xl"
-                        lineHeight="baseline-3"
+                        fontSize={['2xl', null, null, '2xl-lg']}
+                        lineHeight={['baseline-3', null, null, 'baseline-3-lg']}
                         mb="baseline-2"
                         color="fg"
                     >
@@ -80,8 +80,8 @@ export default function Project(
                 <Box mb="baseline-2" as="section">
                     <Heading
                         as="h2"
-                        fontSize="2xl"
-                        lineHeight="baseline-3"
+                        fontSize={['2xl', null, null, '2xl-lg']}
+                        lineHeight={['baseline-3', null, null, 'baseline-3-lg']}
                         mb="baseline-2"
                         color="fg"
                     >
@@ -91,16 +91,26 @@ export default function Project(
                         <Link
                             href={project.repositoryUrl}
                             isExternal
-                            fontSize="md"
-                            lineHeight="baseline-2"
+                            fontSize={['md', null, null, 'md-lg']}
+                            lineHeight={[
+                                'baseline-2',
+                                null,
+                                null,
+                                'baseline-2-lg',
+                            ]}
                         >
                             Repositório
                         </Link>
                         <Link
                             href={project.previewUrl}
                             isExternal
-                            fontSize="md"
-                            lineHeight="baseline-2"
+                            fontSize={['md', null, null, 'md-lg']}
+                            lineHeight={[
+                                'baseline-2',
+                                null,
+                                null,
+                                'baseline-2-lg',
+                            ]}
                         >
                             Demonstração
                         </Link>

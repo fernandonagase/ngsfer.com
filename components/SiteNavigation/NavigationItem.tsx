@@ -18,8 +18,8 @@ export default function NavigationItem({
     return (
         <Link
             href={location}
-            fontSize="md"
-            lineHeight="baseline-2"
+            fontSize={['md', null, null, 'md-lg']}
+            lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
             as={NextLink}
             variant={active ? 'navigationActive' : 'navigation'}
             aria-current={active ? 'page' : undefined}

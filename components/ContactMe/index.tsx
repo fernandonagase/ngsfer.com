@@ -21,15 +21,18 @@ export default function ContactMe() {
     return (
         <div>
             <Text
-                fontSize="md"
-                lineHeight="baseline-2"
+                fontSize={['md', null, null, 'md-lg']}
+                lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
                 color="fg"
-                mb="baseline-1"
+                mb={['baseline-1', null, null, 0]}
             >
                 Fale comigo:
             </Text>
             <Box as="address" fontStyle="normal">
-                <List display="flex" gap="baseline-1">
+                <List
+                    display="flex"
+                    gap={['baseline-1', null, null, 'baseline-1-lg']}
+                >
                     {contactList.map((contact) => {
                         return (
                             <ListItem key={contact.name}>

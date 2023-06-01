@@ -14,29 +14,36 @@ export default function Home() {
             </Head>
 
             <Heading
-                fontSize="4xl"
-                lineHeight="baseline-4"
+                fontSize={['4xl', null, null, '4xl-lg']}
+                lineHeight={['baseline-4', null, null, 'baseline-5-lg']}
                 color="fg"
-                mb="baseline-2"
+                mb={['baseline-2', null, null, 'baseline-2-lg']}
             >
-                Sou o{' '}
-                <Box as="span" color="primary.400">
-                    Fernando
-                </Box>
-                , muito prazer!
+                <div>
+                    Sou o{' '}
+                    <Box as="span" color="primary.400">
+                        Fernando
+                    </Box>
+                    ,
+                </div>
+                muito prazer!
             </Heading>
             <Text
-                fontSize="md"
-                lineHeight="baseline-2"
+                fontSize={['md', null, null, 'md-lg']}
+                lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
                 color="fg"
-                mb="baseline-2"
+                mb={['baseline-2', null, null, 'baseline-2-lg']}
             >
                 Sou graduado em Engenharia de Software pela Universidade de
                 Ribeirão Preto (Unaerp) e, atualmente, dedico os meus esforços
                 para a área de desenvolvimento full stack para a web.
             </Text>
             <nav>
-                <Text fontSize="md" lineHeight="baseline-2" color="fg">
+                <Text
+                    fontSize={['md', null, null, 'md-lg']}
+                    lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
+                    color="fg"
+                >
                     Visite o{' '}
                     <Link href="/portfolio" as={NextLink}>
                         meu portfólio

@@ -4,7 +4,10 @@ import NavigationItem from './NavigationItem'
 export default function SiteNavigation() {
     return (
         <nav>
-            <List display="flex" gap="baseline-2">
+            <List
+                display="flex"
+                gap={['baseline-2', null, null, 'baseline-2-lg']}
+            >
                 <ListItem>
                     <NavigationItem location="/">Início</NavigationItem>
                 </ListItem>
@@ -19,8 +22,8 @@ export default function SiteNavigation() {
                     <Link
                         href="https://blog.ngsfer.com"
                         isExternal
-                        fontSize="md"
-                        lineHeight="baseline-2"
+                        fontSize={['md', null, null, 'md-lg']}
+                        lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
                         variant="navigation"
                     >
                         Blog
