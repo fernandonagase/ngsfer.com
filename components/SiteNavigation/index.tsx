@@ -12,6 +12,9 @@ export default function SiteNavigation() {
                     <NavigationItem location="/">Início</NavigationItem>
                 </ListItem>
                 <ListItem>
+                    <NavigationItem location="/sobre">Sobre mim</NavigationItem>
+                </ListItem>
+                <ListItem>
                     <NavigationItem location="/portfolio">
                         Portfólio
                     </NavigationItem>
@@ -28,9 +31,6 @@ export default function SiteNavigation() {
                     >
                         Blog
                     </Link>
-                </ListItem>
-                <ListItem>
-                    <NavigationItem location="/sobre">Sobre mim</NavigationItem>
                 </ListItem>
             </List>
         </nav>
