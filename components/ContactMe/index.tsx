@@ -1,4 +1,4 @@
-import { Box, List, ListItem, Text } from '@chakra-ui/react'
+import { Box, Flex, List, ListItem, Text } from '@chakra-ui/react'
 
 import ContactItem from './ContactItem'
 
@@ -16,22 +16,20 @@ const contactList = [
         location: 'mailto:fernando@ngsfer.com',
     },
 ]
+const itemSpacing = ['baseline-1', null, null, 'baseline-1-lg']
 
 export default function ContactMe() {
     return (
-        <div>
+        <Flex gap={itemSpacing}>
             <Text
                 fontSize={['md', null, null, 'md-lg']}
                 lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
                 mb={['baseline-1', null, null, 0]}
             >
-                Fale comigo:
+                Contato:
             </Text>
             <Box as="address" fontStyle="normal">
-                <List
-                    display="flex"
-                    gap={['baseline-1', null, null, 'baseline-1-lg']}
-                >
+                <List display="flex" gap={itemSpacing}>
                     {contactList.map((contact) => {
                         return (
                             <ListItem key={contact.name}>
@@ -43,6 +41,6 @@ export default function ContactMe() {
                     })}
                 </List>
             </Box>
-        </div>
+        </Flex>
     )
 }
