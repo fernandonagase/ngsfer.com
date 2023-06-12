@@ -1,3 +1,4 @@
+import BodyText from '@/components/BodyText'
 import { Link, Heading, Text, Box } from '@chakra-ui/react'
 import Head from 'next/head'
 import NextLink from 'next/link'
@@ -27,20 +28,13 @@ export default function Home() {
                 </div>
                 muito prazer!
             </Heading>
-            <Text
-                fontSize={['md', null, null, 'md-lg']}
-                lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                mb={['baseline-2', null, null, 'baseline-2-lg']}
-            >
+            <BodyText>
                 Sou graduado em Engenharia de Software pela Universidade de
                 Ribeirão Preto (Unaerp) e, atualmente, dedico os meus esforços
                 para a área de desenvolvimento full stack para a web.
-            </Text>
+            </BodyText>
             <nav>
-                <Text
-                    fontSize={['md', null, null, 'md-lg']}
-                    lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                >
+                <BodyText>
                     Visite o{' '}
                     <Link href="/portfolio" as={NextLink}>
                         meu portfólio
@@ -51,7 +45,7 @@ export default function Home() {
                     </Link>{' '}
                     para acompanhar a minha jornada de aprendizado com
                     Engenharia de Software.
-                </Text>
+                </BodyText>
             </nav>
         </>
     )

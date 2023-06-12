@@ -1,3 +1,4 @@
+import BodyText from '@/components/BodyText'
 import { Heading, Link, Text } from '@chakra-ui/react'
 import Head from 'next/head'
 import NextLink from 'next/link'
@@ -21,21 +22,13 @@ export default function About() {
             >
                 Sobre mim
             </Heading>
-            <Text
-                fontSize={['md', null, null, 'md-lg']}
-                lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                mb={['baseline-2', null, null, 'baseline-2-lg']}
-            >
+            <BodyText>
                 O meu interesse pelo mundo da computação se manifestou desde
                 quando eu era pequeno, extremamente motivado a criar os meus
                 próprios códigos após entrar em contato com o vasto mundo de
                 websites e videogames.
-            </Text>
-            <Text
-                fontSize={['md', null, null, 'md-lg']}
-                lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                mb={['baseline-2', null, null, 'baseline-2-lg']}
-            >
+            </BodyText>
+            <BodyText>
                 Pude experimentar inúmeras linguagens de programação,{' '}
                 <i lang="en">frameworks</i> e outras ferramentas de
                 desenvolvimento, e mantive a minha paixão viva — enquanto um
@@ -43,36 +36,24 @@ export default function About() {
                 transformá-la na minha profissão: ingressei no curso de
                 Engenharia de Software pela Universidade de Ribeirão Preto
                 (Unaerp) aos 17 anos, no ano de 2018.
-            </Text>
-            <Text
-                fontSize={['md', null, null, 'md-lg']}
-                lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                mb={['baseline-2', null, null, 'baseline-2-lg']}
-            >
+            </BodyText>
+            <BodyText>
                 Devo confessar que, naquela época, não sabia ao certo do que se
                 tratava o curso que escolhi, tampouco sabia sobre o caminho que
                 estava percorrendo. Para dizer a verdade, eu sempre fui uma
                 pessoa tímida, e acreditava que, ao trabalhar com programação,
                 não precisaria ter contato com tantas pessoas... Acho que você
                 já sabe o quão enganado eu estava 😳.
-            </Text>
-            <Text
-                fontSize={['md', null, null, 'md-lg']}
-                lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                mb={['baseline-2', null, null, 'baseline-2-lg']}
-            >
+            </BodyText>
+            <BodyText>
                 Para a minha surpresa, essa quebra de expectativa nunca foi um
                 motivo de pânico, muito pelo contrário, eu passei a valorizar
                 cada vez mais o <b>aspecto humano</b> inerente à engenharia de
                 software. Por esse motivo, tenho me interessado cada vez mais
                 por temas como acessibilidade, experiência de usuário e
                 performance aplicadas à web.
-            </Text>
-            <Text
-                fontSize={['md', null, null, 'md-lg']}
-                lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                mb={['baseline-2', null, null, 'baseline-2-lg']}
-            >
+            </BodyText>
+            <BodyText>
                 Atualmente, meu principal objetivo é ingressar no mercado de
                 desenvolvimento web utilizando tecnologias como React (Next.js),
                 Java (Spring Boot) e Node (Express). Você pode conhecer o meu
@@ -85,7 +66,7 @@ export default function About() {
                     blog
                 </Link>
                 .
-            </Text>
+            </BodyText>
         </>
     )
 }

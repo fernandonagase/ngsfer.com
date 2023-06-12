@@ -1,3 +1,4 @@
+import BodyText from '@/components/BodyText'
 import ProjectCard from '@/components/ProjectCard'
 import { getAllProjects } from '@/lib/portfolio'
 import { ProjectSummary } from '@/lib/portfolio/types/project-summary'
@@ -50,12 +51,7 @@ export default function Portfolio({
                     ))}
                 </Stack>
             ) : (
-                <Text
-                    fontSize={['md', null, null, 'md-lg']}
-                    lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                >
-                    Nenhum projeto publicado
-                </Text>
+                <BodyText>Nenhum projeto publicado</BodyText>
             )}
         </>
     )
