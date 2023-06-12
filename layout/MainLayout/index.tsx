@@ -13,7 +13,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
     return (
         <>
             <SkipNavLink zIndex="skipLink">Ir para o conteúdo</SkipNavLink>
-            <Container maxW="container.lg" color="fg">
+            <Container maxW="container.xl" color="fg">
                 <Header />
                 <Box
                     as="main"
