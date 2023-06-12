@@ -16,7 +16,6 @@ export default function Home() {
             <Heading
                 fontSize={['4xl', null, null, '4xl-lg']}
                 lineHeight={['baseline-4', null, null, 'baseline-5-lg']}
-                color="fg"
                 mb={['baseline-2', null, null, 'baseline-2-lg']}
             >
                 <div>
@@ -31,7 +30,6 @@ export default function Home() {
             <Text
                 fontSize={['md', null, null, 'md-lg']}
                 lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                color="fg"
                 mb={['baseline-2', null, null, 'baseline-2-lg']}
             >
                 Sou graduado em Engenharia de Software pela Universidade de
@@ -42,7 +40,6 @@ export default function Home() {
                 <Text
                     fontSize={['md', null, null, 'md-lg']}
                     lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                    color="fg"
                 >
                     Visite o{' '}
                     <Link href="/portfolio" as={NextLink}>

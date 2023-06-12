@@ -17,7 +17,6 @@ export default function About() {
                 as="h1"
                 fontSize={['4xl', null, null, '4xl-lg']}
                 lineHeight={['baseline-4', null, null, 'baseline-5-lg']}
-                color="fg"
                 mb={['baseline-2', null, null, 'baseline-2-lg']}
             >
                 Sobre mim
@@ -25,7 +24,6 @@ export default function About() {
             <Text
                 fontSize={['md', null, null, 'md-lg']}
                 lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                color="fg"
                 mb={['baseline-2', null, null, 'baseline-2-lg']}
             >
                 O meu interesse pelo mundo da computação se manifestou desde
@@ -36,7 +34,6 @@ export default function About() {
             <Text
                 fontSize={['md', null, null, 'md-lg']}
                 lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                color="fg"
                 mb={['baseline-2', null, null, 'baseline-2-lg']}
             >
                 Pude experimentar inúmeras linguagens de programação,{' '}
@@ -50,7 +47,6 @@ export default function About() {
             <Text
                 fontSize={['md', null, null, 'md-lg']}
                 lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                color="fg"
                 mb={['baseline-2', null, null, 'baseline-2-lg']}
             >
                 Devo confessar que, naquela época, não sabia ao certo do que se
@@ -63,7 +59,6 @@ export default function About() {
             <Text
                 fontSize={['md', null, null, 'md-lg']}
                 lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                color="fg"
                 mb={['baseline-2', null, null, 'baseline-2-lg']}
             >
                 Para a minha surpresa, essa quebra de expectativa nunca foi um
@@ -76,7 +71,6 @@ export default function About() {
             <Text
                 fontSize={['md', null, null, 'md-lg']}
                 lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                color="fg"
                 mb={['baseline-2', null, null, 'baseline-2-lg']}
             >
                 Atualmente, meu principal objetivo é ingressar no mercado de

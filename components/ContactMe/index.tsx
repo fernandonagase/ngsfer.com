@@ -23,7 +23,6 @@ export default function ContactMe() {
             <Text
                 fontSize={['md', null, null, 'md-lg']}
                 lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                color="fg"
                 mb={['baseline-1', null, null, 0]}
             >
                 Fale comigo:

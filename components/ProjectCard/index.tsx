@@ -20,7 +20,6 @@ export default function ProjectCard({
                     fontSize={['2xl', null, null, '2xl-lg']}
                     lineHeight={['baseline-3', null, null, 'baseline-3-lg']}
                     fontWeight="600"
-                    color="fg"
                 >
                     <LinkOverlay href={`portfolio/${slug}`} as={NextLink}>
                         {name}
@@ -30,7 +29,6 @@ export default function ProjectCard({
                     fontSize={['md', null, null, 'md-lg']}
                     lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
                     noOfLines={2}
-                    color="fg"
                 >
                     {description}
                 </Text>

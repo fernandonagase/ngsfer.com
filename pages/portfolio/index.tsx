@@ -34,7 +34,6 @@ export default function Portfolio({
                 as="h1"
                 fontSize={['4xl', null, null, '4xl-lg']}
                 lineHeight={['baseline-4', null, null, 'baseline-5-lg']}
-                color="fg"
                 mb={['baseline-4', null, null, 'baseline-4-lg']}
             >
                 Portfólio
@@ -52,7 +51,6 @@ export default function Portfolio({
                 </Stack>
             ) : (
                 <Text
-                    color="fg"
                     fontSize={['md', null, null, 'md-lg']}
                     lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
                 >

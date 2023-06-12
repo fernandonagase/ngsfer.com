@@ -53,7 +53,6 @@ export default function Project(
                     fontSize={['4xl', null, null, '4xl-lg']}
                     lineHeight={['baseline-4', null, null, 'baseline-5-lg']}
                     mb="baseline-2"
-                    color="fg"
                 >
                     {project.name}
                 </Heading>
@@ -61,7 +60,6 @@ export default function Project(
                     fontSize={['md', null, null, 'md-lg']}
                     lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
                     mb="baseline-4"
-                    color="fg"
                 >
                     {project.description}
                 </Text>
@@ -71,7 +69,6 @@ export default function Project(
                         fontSize={['2xl', null, null, '2xl-lg']}
                         lineHeight={['baseline-3', null, null, 'baseline-3-lg']}
                         mb="baseline-2"
-                        color="fg"
                     >
                         Competências
                     </Heading>
@@ -83,7 +80,6 @@ export default function Project(
                         fontSize={['2xl', null, null, '2xl-lg']}
                         lineHeight={['baseline-3', null, null, 'baseline-3-lg']}
                         mb="baseline-2"
-                        color="fg"
                     >
                         Acesse o projeto
                     </Heading>
