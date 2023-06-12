@@ -9,7 +9,7 @@ export default function Header() {
             p={['baseline-2', null, null, 'baseline-2-lg']}
             direction={['column', null, 'row']}
             justifyContent={[null, null, 'space-between']}
-            align={[null, null, 'center']}
+            align={[null, null, 'flex-end']}
         >
             <Logo />
             <SiteNavigation />
