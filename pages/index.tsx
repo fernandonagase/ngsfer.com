@@ -17,6 +17,7 @@ export default function Home() {
             <Heading
                 fontSize={['4xl', null, null, '4xl-lg']}
                 lineHeight={['baseline-4', null, null, 'baseline-5-lg']}
+                fontWeight="500"
                 mb={['baseline-2', null, null, 'baseline-2-lg']}
             >
                 <div>

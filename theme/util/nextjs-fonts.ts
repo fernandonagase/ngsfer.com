@@ -7,6 +7,6 @@ export const gelasio = Gelasio({
 })
 
 export const poppins = Poppins({
-    weight: ['400', '600', '700'],
+    weight: ['400', '500', '600', '700'],
     subsets: ['latin'],
 })
