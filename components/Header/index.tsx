@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <Flex
             as="header"
-            p={['baseline-2', null, null, 'baseline-2-lg']}
+            py={['baseline-2', null, null, 'baseline-2-lg']}
             direction={['column', null, 'row']}
             justifyContent={[null, null, 'space-between']}
             align={[null, null, 'flex-end']}

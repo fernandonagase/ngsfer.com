@@ -2,7 +2,7 @@ const theme = {
     // base font size in 'rem'
     typeBaseSize: 1.125,
     // baseline size in 'rem'
-    baseline: 0.75,
+    baseline: 0.84,
     typeScale: 1.2,
     typeBaseSizeLg: 1.25,
     baselineLg: 0.938,

@@ -13,11 +13,14 @@ export default function MainLayout({ children }: MainLayoutProps) {
     return (
         <>
             <SkipNavLink zIndex="skipLink">Ir para o conteúdo</SkipNavLink>
-            <Container maxW="container.xl" color="fg">
+            <Container
+                maxW="container.xl"
+                px={['baseline-2', null, null, 'baseline-4-lg']}
+                color="fg"
+            >
                 <Header />
                 <Box
                     as="main"
-                    px="baseline-2"
                     py={['baseline-4', null, null, 'baseline-4-lg']}
                     mb={['baseline-2', null, null, 'baseline-2-lg']}
                     maxW="80ch"
