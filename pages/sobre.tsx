@@ -1,7 +1,9 @@
-import BodyText from '@/components/BodyText'
-import { Heading, Link, Text } from '@chakra-ui/react'
+import { Link } from '@chakra-ui/react'
 import Head from 'next/head'
 import NextLink from 'next/link'
+
+import BodyText from '@/components/BodyText'
+import Heading from '@/components/Heading'
 
 export default function About() {
     return (
@@ -14,14 +16,7 @@ export default function About() {
                 />
             </Head>
 
-            <Heading
-                as="h1"
-                fontSize={['4xl', null, null, '4xl-lg']}
-                lineHeight={['baseline-4', null, null, 'baseline-5-lg']}
-                mb={['baseline-2', null, null, 'baseline-2-lg']}
-            >
-                Sobre mim
-            </Heading>
+            <Heading>Sobre mim</Heading>
             <BodyText>
                 O meu interesse pelo mundo da computação se manifestou desde
                 quando eu era pequeno, extremamente motivado a criar os meus

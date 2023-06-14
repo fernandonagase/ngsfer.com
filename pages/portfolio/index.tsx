@@ -1,11 +1,12 @@
+import { Stack } from '@chakra-ui/react'
+import { GetStaticProps, InferGetStaticPropsType } from 'next'
+import Head from 'next/head'
+
 import BodyText from '@/components/BodyText'
+import Heading from '@/components/Heading'
 import ProjectCard from '@/components/ProjectCard'
 import { getAllProjects } from '@/lib/portfolio'
 import { ProjectSummary } from '@/lib/portfolio/types/project-summary'
-
-import { Heading, Stack, Text } from '@chakra-ui/react'
-import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import Head from 'next/head'
 
 export const getStaticProps: GetStaticProps<{
     projects: ProjectSummary[]
@@ -31,14 +32,7 @@ export default function Portfolio({
                 />
             </Head>
 
-            <Heading
-                as="h1"
-                fontSize={['4xl', null, null, '4xl-lg']}
-                lineHeight={['baseline-4', null, null, 'baseline-5-lg']}
-                mb={['baseline-4', null, null, 'baseline-4-lg']}
-            >
-                Portfólio
-            </Heading>
+            <Heading>Portfólio</Heading>
             {projects.length > 0 ? (
                 <Stack spacing={['baseline-3', null, null, 'baseline-3-lg']}>
                     {projects.map((project) => (

@@ -16,10 +16,18 @@ const lineHeights = {
     ...buildBaseline(theme.baselineLg, 8, 'lg'),
 }
 
+const textStyles = {
+    'typescale-8': {
+        fontSize: ['4xl', null, null, '4xl-lg'],
+        lineHeight: ['baseline-4', null, null, 'baseline-5-lg'],
+    },
+}
+
 const typography = {
     fonts,
     fontSizes,
     lineHeights,
+    textStyles,
 }
 
 export default typography

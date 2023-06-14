@@ -1,10 +1,17 @@
-import { Box, Heading, Link, Text, VStack } from '@chakra-ui/react'
+import {
+    Box,
+    Heading as ChakraHeading,
+    Link,
+    Text,
+    VStack,
+} from '@chakra-ui/react'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 
 import Skills from '@/components/Skills'
 import { getPaths, getProjectFrom } from '@/lib/portfolio'
 import { Project } from '@/lib/portfolio/types/project'
+import Heading from '@/components/Heading'
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const paths = await getPaths()
@@ -48,14 +55,7 @@ export default function Project(
             </Head>
 
             <article>
-                <Heading
-                    as="h1"
-                    fontSize={['4xl', null, null, '4xl-lg']}
-                    lineHeight={['baseline-4', null, null, 'baseline-5-lg']}
-                    mb="baseline-2"
-                >
-                    {project.name}
-                </Heading>
+                <Heading>{project.name}</Heading>
                 <Text
                     fontSize={['md', null, null, 'md-lg']}
                     lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
@@ -64,25 +64,25 @@ export default function Project(
                     {project.description}
                 </Text>
                 <Box mb="baseline-4" as="section">
-                    <Heading
+                    <ChakraHeading
                         as="h2"
                         fontSize={['2xl', null, null, '2xl-lg']}
                         lineHeight={['baseline-3', null, null, 'baseline-3-lg']}
                         mb="baseline-2"
                     >
                         Competências
-                    </Heading>
+                    </ChakraHeading>
                     <Skills skills={project.skills} />
                 </Box>
                 <Box mb="baseline-2" as="section">
-                    <Heading
+                    <ChakraHeading
                         as="h2"
                         fontSize={['2xl', null, null, '2xl-lg']}
                         lineHeight={['baseline-3', null, null, 'baseline-3-lg']}
                         mb="baseline-2"
                     >
                         Acesse o projeto
-                    </Heading>
+                    </ChakraHeading>
                     <VStack align="flex-start" spacing="baseline-1">
                         <Link
                             href={project.repositoryUrl}
