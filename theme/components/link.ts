@@ -16,6 +16,7 @@ const navigationFocusedStyles = {
 const navigationActiveFocusedStyles = {
     textDecoration: 'none',
     border: 'none',
+    borderBottom: '2px solid var(--chakra-colors-primary-400)',
     backgroundColor: 'transparent',
     color: 'fg',
 }
@@ -37,6 +38,7 @@ export default defineStyleConfig({
         navigationActive: {
             textDecoration: 'none',
             fontWeight: '700',
+            borderBottom: '2px solid var(--chakra-colors-primary-400)',
             color: 'fg',
             _hover: navigationActiveFocusedStyles,
             _focusVisible: navigationActiveFocusedStyles,

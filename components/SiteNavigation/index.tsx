@@ -9,15 +9,13 @@ export default function SiteNavigation() {
                 gap={['baseline-2', null, null, 'baseline-2-lg']}
             >
                 <ListItem>
-                    <NavigationItem location="/">Início</NavigationItem>
+                    <NavigationItem location="/" label="Início" />
                 </ListItem>
                 <ListItem>
-                    <NavigationItem location="/sobre">Sobre mim</NavigationItem>
+                    <NavigationItem location="/sobre" label="Sobre mim" />
                 </ListItem>
                 <ListItem>
-                    <NavigationItem location="/portfolio">
-                        Portfólio
-                    </NavigationItem>
+                    <NavigationItem location="/portfolio" label="Portfólio" />
                 </ListItem>
                 <ListItem>
                     {/* <NavigationItem location="/blog">Blog</NavigationItem> */}
