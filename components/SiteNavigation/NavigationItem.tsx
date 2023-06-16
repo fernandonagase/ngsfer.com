@@ -2,6 +2,10 @@ import { Link } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 
+function getFirstPath(path: string) {
+    return path.substring(1).split('/')[0]
+}
+
 type NavigationItemProps = {
     label: string
     location: string
@@ -12,7 +16,7 @@ export default function NavigationItem({
     location,
 }: NavigationItemProps) {
     const { pathname } = useRouter()
-    const active = location === pathname
+    const active = getFirstPath(location) === getFirstPath(pathname)
 
     return (
         <Link
