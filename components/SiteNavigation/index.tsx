@@ -1,4 +1,6 @@
-import { Link, List, ListItem } from '@chakra-ui/react'
+import { Icon, Link, List, ListItem } from '@chakra-ui/react'
+import { HiOutlineExternalLink } from 'react-icons/hi'
+
 import NavigationItem from './NavigationItem'
 
 export default function SiteNavigation() {
@@ -26,8 +28,11 @@ export default function SiteNavigation() {
                         fontSize={['md', null, null, 'md-lg']}
                         lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
                         variant="navigation"
+                        display="flex"
+                        alignItems="center"
                     >
                         Blog
+                        <Icon as={HiOutlineExternalLink} ml="4px" />
                     </Link>
                 </ListItem>
             </List>

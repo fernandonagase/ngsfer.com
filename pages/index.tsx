@@ -1,8 +1,10 @@
-import BodyText from '@/components/BodyText'
-import Heading from '@/components/Heading'
-import { Link, Box } from '@chakra-ui/react'
+import { Link, Box, Icon } from '@chakra-ui/react'
 import Head from 'next/head'
 import NextLink from 'next/link'
+import { HiOutlineExternalLink } from 'react-icons/hi'
+
+import BodyText from '@/components/BodyText'
+import Heading from '@/components/Heading'
 
 export default function Home() {
     return (
@@ -39,7 +41,12 @@ export default function Home() {
                     </Link>{' '}
                     para conferir minhas competências ou o{' '}
                     <Link href="https://blog.ngsfer.com" isExternal>
-                        meu blog
+                        meu blog{' '}
+                        <Icon
+                            as={HiOutlineExternalLink}
+                            ml="2px"
+                            verticalAlign="middle"
+                        />
                     </Link>{' '}
                     para acompanhar a minha jornada de aprendizado com
                     Engenharia de Software.
