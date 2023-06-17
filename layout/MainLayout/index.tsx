@@ -14,7 +14,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
         <>
             <SkipNavLink zIndex="skipLink">Ir para o conteúdo</SkipNavLink>
             <Container
-                maxW="container.xl"
+                maxW="container.lg"
                 px={['baseline-2', null, null, 'baseline-4-lg']}
                 color="fg"
             >
