@@ -18,8 +18,8 @@ const lineHeights = {
 
 const textStyles = {
     'typescale-8': {
-        fontSize: ['4xl', null, null, '4xl-lg'],
-        lineHeight: ['baseline-4', null, null, 'baseline-5-lg'],
+        fontSize: ['3xl', null, null, '3xl-lg'],
+        lineHeight: ['baseline-3', null, null, 'baseline-4-lg'],
     },
 }
 
