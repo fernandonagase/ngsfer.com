@@ -5,8 +5,8 @@ import sizes from './foundations/sizes'
 import space from './foundations/space'
 import typography from './foundations/typography'
 
-import Link from './components/link'
+import components from './components'
 
-const overrides = { colors, sizes, space, ...typography, components: { Link } }
+const overrides = { colors, sizes, space, ...typography, components }
 
 export default extendTheme(overrides)
