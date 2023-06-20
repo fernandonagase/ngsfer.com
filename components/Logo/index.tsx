@@ -1,5 +1,10 @@
-import { Flex, LinkBox, LinkOverlay, Text } from '@chakra-ui/react'
+import { Flex, LinkBox, LinkOverlay, Text, defineStyle } from '@chakra-ui/react'
 import NextLink from 'next/link'
+
+const hoverStyles = defineStyle({
+    textDecoration: 'underline',
+    color: 'primary.700',
+})
 
 export default function Logo() {
     return (
@@ -14,7 +19,16 @@ export default function Logo() {
                     lineHeight="normal"
                     fontWeight="700"
                 >
-                    <LinkOverlay href="/" as={NextLink}>
+                    <LinkOverlay
+                        href="/"
+                        _hover={hoverStyles}
+                        _focusVisible={{
+                            ...hoverStyles,
+                            outline:
+                                '3px solid var(--chakra-colors-primary-200)',
+                        }}
+                        as={NextLink}
+                    >
                         Fernando Nagase
                     </LinkOverlay>
                 </Text>

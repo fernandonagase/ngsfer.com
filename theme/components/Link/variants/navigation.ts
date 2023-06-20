@@ -1,9 +1,9 @@
 import { defineStyle } from '@chakra-ui/react'
 
-const focusedStyles = {
-    color: 'primary.700',
+const focusedStyles = defineStyle({
     textDecoration: 'underline',
-}
+    color: 'primary.700',
+})
 
 const navigationLink = defineStyle({
     textDecoration: 'none',
