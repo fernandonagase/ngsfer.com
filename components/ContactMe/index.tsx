@@ -1,4 +1,4 @@
-import { Box, Flex, List, ListItem, Text } from '@chakra-ui/react'
+import { Box, Flex, List, ListItem, Text, useTheme } from '@chakra-ui/react'
 
 import ContactItem from './ContactItem'
 
@@ -19,13 +19,11 @@ const contactList = [
 const itemSpacing = ['baseline-1', null, null, 'baseline-1-lg']
 
 export default function ContactMe() {
+    const theme = useTheme()
+
     return (
-        <Flex gap={itemSpacing}>
-            <Text
-                fontSize={['md', null, null, 'md-lg']}
-                lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                mb={['baseline-1', null, null, 0]}
-            >
+        <Flex gap={itemSpacing} fontFamily={theme.fonts.auxiliary}>
+            <Text textStyle="typescale-2" mb={['baseline-1', null, null, 0]}>
                 Contato:
             </Text>
             <Box as="address" fontStyle="normal">

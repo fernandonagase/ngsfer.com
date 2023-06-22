@@ -22,7 +22,6 @@ export default function MainLayout({ children }: MainLayoutProps) {
                 <Box
                     as="main"
                     py={['baseline-4', null, null, 'baseline-4-lg']}
-                    mb={['baseline-2', null, null, 'baseline-2-lg']}
                     maxW="80ch"
                 >
                     <SkipNavContent />

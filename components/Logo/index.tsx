@@ -1,4 +1,11 @@
-import { Flex, LinkBox, LinkOverlay, Text, defineStyle } from '@chakra-ui/react'
+import {
+    Flex,
+    LinkBox,
+    LinkOverlay,
+    Text,
+    defineStyle,
+    useTheme,
+} from '@chakra-ui/react'
 import NextLink from 'next/link'
 
 const hoverStyles = defineStyle({
@@ -7,17 +14,20 @@ const hoverStyles = defineStyle({
 })
 
 export default function Logo() {
+    const theme = useTheme()
+
     return (
         <LinkBox mb={['baseline-2', null, 0]} display="inline-block">
             <Flex
                 height={['baseline-4', null, null, 'baseline-4-lg']}
                 flexDirection="column"
                 justifyContent="flex-end"
+                fontFamily={theme.fonts.auxiliary}
             >
                 <Text
                     fontSize={['md', null, null, 'md-lg']}
-                    lineHeight="normal"
-                    fontWeight="700"
+                    lineHeight={1}
+                    fontWeight="600"
                 >
                     <LinkOverlay
                         href="/"
@@ -33,7 +43,7 @@ export default function Logo() {
                     </LinkOverlay>
                 </Text>
                 <Text
-                    fontSize={['md', null, null, 'md-lg']}
+                    fontSize={['sm', null, null, 'sm-lg']}
                     lineHeight="normal"
                 >
                     Engenheiro de Software

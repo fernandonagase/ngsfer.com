@@ -1,4 +1,4 @@
-import { Link } from '@chakra-ui/react'
+import { Link, useTheme } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -17,14 +17,15 @@ export default function NavigationItem({
 }: NavigationItemProps) {
     const { pathname } = useRouter()
     const active = getFirstPath(location) === getFirstPath(pathname)
+    const theme = useTheme()
 
     return (
         <Link
             href={location}
             aria-current={active ? 'page' : undefined}
             variant={active ? 'navigationActive' : 'navigation'}
-            fontSize={['md', null, null, 'md-lg']}
-            lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
+            fontFamily={theme.fonts.auxiliary}
+            textStyle="typescale-2"
             /*
                 Solução para manter cada item com tamanho inicial igual ao
                 tamanho do texto em negrito, visando impedir que o item que

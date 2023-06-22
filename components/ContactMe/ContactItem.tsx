@@ -11,8 +11,7 @@ export default function ContactItem({ children, url }: ContactItemProps) {
         <Link
             href={url}
             isExternal
-            fontSize={['md', null, null, 'md-lg']}
-            lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
+            textStyle="typescale-2"
             variant="navigation"
             color="primary.400"
         >

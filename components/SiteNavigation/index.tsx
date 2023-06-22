@@ -1,9 +1,11 @@
-import { Icon, Link, List, ListItem } from '@chakra-ui/react'
+import { Icon, Link, List, ListItem, useTheme } from '@chakra-ui/react'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 
 import NavigationItem from './NavigationItem'
 
 export default function SiteNavigation() {
+    const theme = useTheme()
+
     return (
         <nav>
             <List
@@ -25,8 +27,8 @@ export default function SiteNavigation() {
                     <Link
                         href="https://blog.ngsfer.com"
                         isExternal
-                        fontSize={['md', null, null, 'md-lg']}
-                        lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
+                        fontFamily={theme.fonts.auxiliary}
+                        textStyle="typescale-2"
                         variant="navigation"
                         display="flex"
                         alignItems="center"

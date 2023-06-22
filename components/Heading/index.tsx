@@ -23,7 +23,7 @@ export default function Heading(props: HeadingProps) {
     return (
         <Box
             as={`h${level}`}
-            fontWeight={500}
+            fontWeight={600}
             fontFamily={theme.fonts.heading}
             textStyle={textStyle}
             mb={[

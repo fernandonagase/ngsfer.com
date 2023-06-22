@@ -18,9 +18,9 @@ export default function ProjectCard({
         <Box as="article">
             <Heading
                 as="h2"
-                fontSize={['xl', null, null, 'xl-lg']}
-                lineHeight={['baseline-2', null, null, 'baseline-3-lg']}
-                fontWeight="400"
+                fontSize={['lg', null, null, 'lg-lg']}
+                lineHeight={['baseline-1', null, null, 'baseline-2-lg']}
+                fontWeight="500"
                 marginBottom={['baseline-1', null, null, 'baseline-1-lg']}
             >
                 <Link

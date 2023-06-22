@@ -6,7 +6,7 @@ const focusedStyles = {
 
 const navigationActiveLink = defineStyle({
     textDecoration: 'none',
-    fontWeight: '700',
+    fontWeight: '600',
     borderBottom: '2px solid var(--chakra-colors-primary-400)',
     color: 'fg',
     _hover: focusedStyles,
