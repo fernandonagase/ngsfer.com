@@ -8,8 +8,7 @@ type BodyTextProps = {
 export default function BodyText(props: BodyTextProps) {
     return (
         <Text
-            fontSize={['md', null, null, 'md-lg']}
-            lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
+            textStyle="typescale-3"
             mb={['baseline-2', null, null, 'baseline-2-lg']}
         >
             {props.children}

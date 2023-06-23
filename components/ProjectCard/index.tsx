@@ -16,10 +16,10 @@ export default function ProjectCard({
 
     return (
         <Box as="article">
-            <Heading
+            <Box
                 as="h2"
-                fontSize={['lg', null, null, 'lg-lg']}
-                lineHeight={['baseline-1', null, null, 'baseline-2-lg']}
+                textStyle="typescale-4"
+                fontFamily={theme.fonts.heading}
                 fontWeight="500"
                 marginBottom={['baseline-1', null, null, 'baseline-1-lg']}
             >
@@ -35,12 +35,8 @@ export default function ProjectCard({
                 >
                     {name}
                 </Link>
-            </Heading>
-            <Text
-                fontSize={['md', null, null, 'md-lg']}
-                lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                noOfLines={2}
-            >
+            </Box>
+            <Text textStyle="typescale-3" noOfLines={2}>
                 {description}
             </Text>
         </Box>

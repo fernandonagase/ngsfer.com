@@ -56,57 +56,31 @@ export default function Project(
 
             <article>
                 <Heading>{project.name}</Heading>
-                <Text
-                    fontSize={['md', null, null, 'md-lg']}
-                    lineHeight={['baseline-2', null, null, 'baseline-2-lg']}
-                    mb="baseline-4"
-                >
+                <Text textStyle="typescale-3" mb="baseline-4">
                     {project.description}
                 </Text>
                 <Box mb="baseline-4" as="section">
-                    <ChakraHeading
-                        as="h2"
-                        fontSize={['2xl', null, null, '2xl-lg']}
-                        lineHeight={['baseline-3', null, null, 'baseline-3-lg']}
-                        mb="baseline-2"
-                    >
+                    <Heading level={2} textStyle="typescale-5" marginBottom={1}>
                         Competências
-                    </ChakraHeading>
+                    </Heading>
                     <Skills skills={project.skills} />
                 </Box>
                 <Box mb="baseline-2" as="section">
-                    <ChakraHeading
-                        as="h2"
-                        fontSize={['2xl', null, null, '2xl-lg']}
-                        lineHeight={['baseline-3', null, null, 'baseline-3-lg']}
-                        mb="baseline-2"
-                    >
+                    <Heading level={2} textStyle="typescale-5" marginBottom={1}>
                         Acesse o projeto
-                    </ChakraHeading>
+                    </Heading>
                     <VStack align="flex-start" spacing="baseline-1">
                         <Link
                             href={project.repositoryUrl}
                             isExternal
-                            fontSize={['md', null, null, 'md-lg']}
-                            lineHeight={[
-                                'baseline-2',
-                                null,
-                                null,
-                                'baseline-2-lg',
-                            ]}
+                            textStyle="typescale-3"
                         >
                             Repositório
                         </Link>
                         <Link
                             href={project.previewUrl}
                             isExternal
-                            fontSize={['md', null, null, 'md-lg']}
-                            lineHeight={[
-                                'baseline-2',
-                                null,
-                                null,
-                                'baseline-2-lg',
-                            ]}
+                            textStyle="typescale-3"
                         >
                             Demonstração
                         </Link>

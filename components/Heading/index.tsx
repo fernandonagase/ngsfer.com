@@ -14,7 +14,7 @@ export default function Heading(props: HeadingProps) {
     const {
         children,
         level = 1,
-        textStyle = 'typescale-8',
+        textStyle = 'typescale-7',
         marginBottom = 3,
     } = props
 
