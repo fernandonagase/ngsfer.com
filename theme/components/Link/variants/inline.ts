@@ -9,6 +9,7 @@ const focusedStyles = {
 const inlineLink = defineStyle({
     textDecoration: 'underline',
     color: 'primary.400',
+    border: '1px solid transparent',
     _hover: focusedStyles,
     _focusVisible: focusedStyles,
 })

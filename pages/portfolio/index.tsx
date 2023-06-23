@@ -41,6 +41,7 @@ export default function Portfolio({
                             slug={project.slug}
                             name={project.name}
                             description={project.description}
+                            skills={project.skills}
                         />
                     ))}
                 </Stack>

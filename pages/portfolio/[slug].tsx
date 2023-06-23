@@ -1,12 +1,7 @@
-import {
-    Box,
-    Heading as ChakraHeading,
-    Link,
-    Text,
-    VStack,
-} from '@chakra-ui/react'
+import { Box, Flex, Icon, Link, Text } from '@chakra-ui/react'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
+import { HiOutlineExternalLink } from 'react-icons/hi'
 
 import Skills from '@/components/Skills'
 import { getPaths, getProjectFrom } from '@/lib/portfolio'
@@ -69,22 +64,31 @@ export default function Project(
                     <Heading level={2} textStyle="typescale-5" marginBottom={1}>
                         Acesse o projeto
                     </Heading>
-                    <VStack align="flex-start" spacing="baseline-1">
+                    <Flex
+                        gap={['baseline-1', null, null, 'baseline-1-lg']}
+                        align="baseline"
+                    >
                         <Link
                             href={project.repositoryUrl}
                             isExternal
                             textStyle="typescale-3"
+                            display="flex"
+                            alignItems="center"
                         >
                             Repositório
+                            <Icon as={HiOutlineExternalLink} ml="4px" />
                         </Link>
                         <Link
                             href={project.previewUrl}
                             isExternal
                             textStyle="typescale-3"
+                            display="flex"
+                            alignItems="center"
                         >
                             Demonstração
+                            <Icon as={HiOutlineExternalLink} ml="4px" />
                         </Link>
-                    </VStack>
+                    </Flex>
                 </Box>
             </article>
         </>

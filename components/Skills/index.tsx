@@ -1,3 +1,4 @@
+import { poppins } from '@/theme/util/nextjs-fonts'
 import { Stack, Tag } from '@chakra-ui/react'
 
 type SkillsProps = {
@@ -11,9 +12,8 @@ export default function Skills(props: SkillsProps) {
         <Stack direction="row" spacing={1}>
             {skills.map((skill) => (
                 <Tag
-                    borderRadius="none"
-                    variant="outline"
-                    color="fg"
+                    fontSize={['xs', null, null, 'xs-lg']}
+                    fontFamily={poppins.style.fontFamily}
                     key={skill}
                 >
                     {skill}

@@ -1,16 +1,19 @@
 import { Box, Heading, Link, Text, useTheme } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import Skills from '../Skills'
 
 type ProjectCardProps = {
     slug: string
     name: string
     description: string
+    skills: string[]
 }
 
 export default function ProjectCard({
     slug,
     name,
     description,
+    skills,
 }: ProjectCardProps) {
     const theme = useTheme()
 
@@ -36,9 +39,14 @@ export default function ProjectCard({
                     {name}
                 </Link>
             </Box>
-            <Text textStyle="typescale-3" noOfLines={2}>
+            <Text
+                textStyle="typescale-3"
+                noOfLines={2}
+                marginBottom={['baseline-1', null, null, 'baseline-1-lg']}
+            >
                 {description}
             </Text>
+            <Skills skills={skills} />
         </Box>
     )
 }
