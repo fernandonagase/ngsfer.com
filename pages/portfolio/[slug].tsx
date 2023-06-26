@@ -1,7 +1,8 @@
 import { Box, Flex, Icon, Link, Text } from '@chakra-ui/react'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
-import { HiOutlineExternalLink } from 'react-icons/hi'
+import NextLink from 'next/link'
+import { HiOutlineExternalLink, HiArrowLeft } from 'react-icons/hi'
 
 import Skills from '@/components/Skills'
 import { getPaths, getProjectFrom } from '@/lib/portfolio'
@@ -50,6 +51,18 @@ export default function Project(
             </Head>
 
             <article>
+                <Link
+                    href="/portfolio"
+                    variant="back"
+                    display="inline-flex"
+                    alignItems="center"
+                    gap={['baseline-1', null, null, 'baseline-1-lg']}
+                    mb={['baseline-5', null, null, 'baseline-5-lg']}
+                    as={NextLink}
+                >
+                    <Icon as={HiArrowLeft} />
+                    Voltar para projetos
+                </Link>
                 <Heading>{project.name}</Heading>
                 <Text textStyle="typescale-3" mb="baseline-4">
                     {project.description}
