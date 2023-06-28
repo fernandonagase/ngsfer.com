@@ -63,7 +63,7 @@ export default function Project(
                     <Icon as={HiArrowLeft} />
                     Voltar para projetos
                 </Link>
-                <Heading>{project.name}</Heading>
+                <Heading textStyle="typescale-6">{project.name}</Heading>
                 <Text textStyle="typescale-3" mb="baseline-4">
                     {project.description}
                 </Text>

@@ -32,7 +32,7 @@ export default function Portfolio({
                 />
             </Head>
 
-            <Heading>Portfólio</Heading>
+            <Heading textStyle="typescale-6">Portfólio</Heading>
             {projects.length > 0 ? (
                 <Stack spacing={['baseline-3', null, null, 'baseline-3-lg']}>
                     {projects.map((project) => (

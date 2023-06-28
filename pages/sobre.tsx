@@ -16,7 +16,7 @@ export default function About() {
                 />
             </Head>
 
-            <Heading>Sobre mim</Heading>
+            <Heading textStyle="typescale-6">Sobre mim</Heading>
             <BodyText>
                 O meu interesse pelo mundo da computação se manifestou desde
                 quando eu era pequeno, extremamente motivado a criar os meus
