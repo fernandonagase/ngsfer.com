@@ -17,7 +17,7 @@ export default function Home() {
                 />
             </Head>
 
-            <Heading>
+            <Heading textStyle="typescale-6">
                 <div>
                     Sou o{' '}
                     <Box as="span" color="primary.400">

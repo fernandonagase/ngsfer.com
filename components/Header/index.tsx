@@ -6,10 +6,9 @@ export default function Header() {
     return (
         <Flex
             as="header"
-            py={['baseline-2', null, null, 'baseline-2-lg']}
-            direction={['column', null, 'row']}
-            justifyContent={[null, null, 'space-between']}
-            align={[null, null, 'flex-end']}
+            direction="column"
+            mt={['baseline-4', null, null, 'baseline-4-lg']}
+            mb={['baseline-6', null, null, 'baseline-6-lg']}
         >
             <Logo />
             <SiteNavigation />

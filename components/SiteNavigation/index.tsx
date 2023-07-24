@@ -1,4 +1,4 @@
-import { Icon, Link, List, ListItem, useTheme } from '@chakra-ui/react'
+import { Box, Icon, Link, List, ListItem, useTheme } from '@chakra-ui/react'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 
 import NavigationItem from './NavigationItem'
@@ -7,14 +7,11 @@ export default function SiteNavigation() {
     const theme = useTheme()
 
     return (
-        <nav>
+        <Box as="nav" ml="-8px">
             <List
                 display="flex"
-                gap={['baseline-2', null, null, 'baseline-2-lg']}
+                gap={['baseline-1', null, null, 'baseline-1-lg']}
             >
-                <ListItem>
-                    <NavigationItem location="/" label="Início" />
-                </ListItem>
                 <ListItem>
                     <NavigationItem location="/sobre" label="Sobre mim" />
                 </ListItem>
@@ -38,6 +35,6 @@ export default function SiteNavigation() {
                     </Link>
                 </ListItem>
             </List>
-        </nav>
+        </Box>
     )
 }

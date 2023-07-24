@@ -23,6 +23,7 @@ export default function NavigationItem({
         <Link
             href={location}
             aria-current={active ? 'page' : undefined}
+            paddingInline="8px"
             variant={active ? 'navigationActive' : 'navigation'}
             fontFamily={theme.fonts.auxiliary}
             textStyle="typescale-2"

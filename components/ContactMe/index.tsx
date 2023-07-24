@@ -1,6 +1,7 @@
-import { Box, Flex, List, ListItem, Text, useTheme } from '@chakra-ui/react'
+import { Box, Flex, Text, useTheme } from '@chakra-ui/react'
 
 import ContactItem from './ContactItem'
+import { Fragment } from 'react'
 
 const contactList = [
     {
@@ -22,22 +23,29 @@ export default function ContactMe() {
     const theme = useTheme()
 
     return (
-        <Flex gap={itemSpacing} fontFamily={theme.fonts.auxiliary}>
-            <Text textStyle="typescale-2" mb={['baseline-1', null, null, 0]}>
-                Contato:
-            </Text>
-            <Box as="address" fontStyle="normal">
-                <List display="flex" gap={itemSpacing}>
-                    {contactList.map((contact) => {
-                        return (
-                            <ListItem key={contact.name}>
-                                <ContactItem url={contact.location}>
-                                    {contact.name}
-                                </ContactItem>
-                            </ListItem>
-                        )
-                    })}
-                </List>
+        <Flex
+            gap={itemSpacing}
+            fontFamily={theme.fonts.auxiliary}
+            alignItems="center"
+        >
+            <Text textStyle="typescale-2">Contato:</Text>
+            <Box
+                as="address"
+                fontStyle="normal"
+                display="flex"
+                alignItems="center"
+                gap={itemSpacing}
+            >
+                {contactList.map((contact, index) => {
+                    return (
+                        <Fragment key={contact.name}>
+                            {index !== 0 && '/'}
+                            <ContactItem url={contact.location}>
+                                {contact.name}
+                            </ContactItem>
+                        </Fragment>
+                    )
+                })}
             </Box>
         </Flex>
     )
