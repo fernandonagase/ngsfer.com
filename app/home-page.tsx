@@ -1,22 +1,15 @@
+'use client'
+
 import { Link, Box, Icon } from '@chakra-ui/react'
-import Head from 'next/head'
-import NextLink from 'next/link'
+import { Link as NextLink } from '@chakra-ui/next-js'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 
 import BodyText from '@/components/BodyText'
 import Heading from '@/components/Heading'
 
-export default function Home() {
+export default function HomePage() {
     return (
         <>
-            <Head>
-                <title>Sou o Fernando Nagase, muito prazer!</title>
-                <meta
-                    name="description"
-                    content="Este é o meu site profissional, onde apresento a minha jornada como engenheiro de software. Aqui, você poderá conhecer mais sobre mim, sobre minhas competências e sobre minhas experiências de aprendizado."
-                />
-            </Head>
-
             <Heading textStyle="typescale-6">
                 <div>
                     Sou o{' '}
@@ -36,10 +29,8 @@ export default function Home() {
             <nav>
                 <BodyText>
                     Visite o{' '}
-                    <Link href="/portfolio" as={NextLink}>
-                        meu portfólio
-                    </Link>{' '}
-                    para conferir minhas competências ou o{' '}
+                    <NextLink href="/portfolio">meu portfólio</NextLink> para
+                    conferir minhas competências ou o{' '}
                     <Link href="https://blog.ngsfer.com" isExternal>
                         meu blog{' '}
                         <Icon
