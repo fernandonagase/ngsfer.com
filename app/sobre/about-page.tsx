@@ -1,21 +1,14 @@
+'use client'
+
 import { Link } from '@chakra-ui/react'
-import Head from 'next/head'
-import NextLink from 'next/link'
+import { Link as NextLink } from '@chakra-ui/next-js'
 
 import BodyText from '@/components/BodyText'
 import Heading from '@/components/Heading'
 
-export default function About() {
+export default function AboutPage() {
     return (
         <>
-            <Head>
-                <title>Sobre mim - Fernando Nagase</title>
-                <meta
-                    name="description"
-                    content="Conheça um pouco mais sobre a minha história com engenharia de software."
-                />
-            </Head>
-
             <Heading textStyle="typescale-6">Sobre mim</Heading>
             <BodyText>
                 O meu interesse pelo mundo da computação se manifestou desde
@@ -53,10 +46,7 @@ export default function About() {
                 desenvolvimento web utilizando tecnologias como React (Next.js),
                 Java (Spring Boot) e Node (Express). Você pode conhecer o meu
                 trabalho visitando o meu{' '}
-                <Link href="/portfolio" as={NextLink}>
-                    portfólio
-                </Link>{' '}
-                e o meu{' '}
+                <NextLink href="/portfolio">portfólio</NextLink> e o meu{' '}
                 <Link href="https://blog.ngsfer.com" isExternal>
                     blog
                 </Link>
