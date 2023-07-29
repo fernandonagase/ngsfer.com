@@ -1,68 +1,33 @@
+'use client'
+
 import { Box, Flex, Icon, Link, Text } from '@chakra-ui/react'
-import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
-import Head from 'next/head'
-import NextLink from 'next/link'
+import { Link as NextLink } from '@chakra-ui/next-js'
 import { HiOutlineExternalLink, HiArrowLeft } from 'react-icons/hi'
 
 import Skills from '@/components/Skills'
-import { getPaths, getProjectFrom } from '@/lib/portfolio'
 import { Project } from '@/lib/portfolio/types/project'
 import Heading from '@/components/Heading'
 
-export const getStaticPaths: GetStaticPaths = async () => {
-    const paths = await getPaths()
-    return {
-        paths: paths.map((path) => ({
-            params: {
-                slug: path,
-            },
-        })),
-        fallback: false,
-    }
-}
-
-export const getStaticProps: GetStaticProps<{
+type ProjectPageProps = {
     project: Project
-}> = async (context) => {
-    const slug = context.params?.slug
-    if (!slug || Array.isArray(slug)) {
-        return {
-            notFound: true,
-        }
-    }
-
-    const project = await getProjectFrom(slug)
-    return {
-        props: {
-            project,
-        },
-    }
 }
 
-export default function Project(
-    props: InferGetStaticPropsType<typeof getStaticProps>
-) {
+export default function ProjectPage(props: ProjectPageProps) {
     const { project } = props
     return (
         <>
-            <Head>
-                <title>{project.name}</title>
-                <meta name="description" content={project.description} />
-            </Head>
-
             <article>
-                <Link
+                <NextLink
                     href="/portfolio"
                     variant="back"
                     display="inline-flex"
                     alignItems="center"
                     gap={['baseline-1', null, null, 'baseline-1-lg']}
                     mb={['baseline-5', null, null, 'baseline-5-lg']}
-                    as={NextLink}
                 >
                     <Icon as={HiArrowLeft} />
                     Voltar para projetos
-                </Link>
+                </NextLink>
                 <Heading textStyle="typescale-6">{project.name}</Heading>
                 <Text textStyle="typescale-3" mb="baseline-4">
                     {project.description}
