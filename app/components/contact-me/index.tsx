@@ -1,7 +1,7 @@
+import { Fragment } from 'react'
 import { Box, Flex, Text, useTheme } from '@chakra-ui/react'
 
 import ContactItem from './ContactItem'
-import { Fragment } from 'react'
 
 const contactList = [
     {

@@ -4,9 +4,9 @@ import { Box, Flex, Icon, Link, Text } from '@chakra-ui/react'
 import { Link as NextLink } from '@chakra-ui/next-js'
 import { HiOutlineExternalLink, HiArrowLeft } from 'react-icons/hi'
 
-import Skills from '@/components/Skills'
+import Skills from '@/app/components/skills'
 import { Project } from '@/lib/portfolio/types/project'
-import Heading from '@/components/Heading'
+import Heading from '@/app/components/heading'
 
 type ProjectPageProps = {
     project: Project

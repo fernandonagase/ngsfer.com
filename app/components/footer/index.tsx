@@ -1,5 +1,6 @@
 import { Box, Flex, Text, useTheme } from '@chakra-ui/react'
-import ContactMe from '../ContactMe'
+
+import ContactMe from '@/app/components/contact-me'
 
 export default function Footer() {
     const theme = useTheme()

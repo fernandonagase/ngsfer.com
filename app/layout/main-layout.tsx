@@ -7,7 +7,7 @@ import { Box, Container } from '@chakra-ui/react'
 import { SkipNavLink, SkipNavContent } from '@chakra-ui/skip-nav'
 
 import Header from '@/app/components/header'
-import Footer from '@/components/Footer'
+import Footer from '@/app/components/footer'
 import theme from '@/theme'
 
 type MainLayoutProps = {

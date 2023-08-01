@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/react'
 
-import Logo from '@/components/Logo'
+import Logo from '@/app/components/logo'
 import SiteNavigation from '@/app/components/site-navigation'
 
 export default function Header() {

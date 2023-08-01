@@ -2,9 +2,9 @@
 
 import { Stack } from '@chakra-ui/react'
 
-import BodyText from '@/components/BodyText'
-import Heading from '@/components/Heading'
-import ProjectCard from '@/components/ProjectCard'
+import BodyText from '@/app/components/body-text'
+import Heading from '@/app/components/heading'
+import ProjectCard from '@/app/components/project-card'
 import { ProjectSummary } from '@/lib/portfolio/types/project-summary'
 
 type PortfolioProps = {

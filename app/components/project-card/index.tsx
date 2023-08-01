@@ -1,6 +1,7 @@
-import { Box, Heading, Link, Text, useTheme } from '@chakra-ui/react'
-import NextLink from 'next/link'
-import Skills from '../Skills'
+import { Box, Text, useTheme } from '@chakra-ui/react'
+import { Link as NextLink } from '@chakra-ui/next-js'
+
+import Skills from '@/app/components/skills'
 
 type ProjectCardProps = {
     slug: string
@@ -26,7 +27,7 @@ export default function ProjectCard({
                 fontWeight="500"
                 marginBottom={['baseline-1', null, null, 'baseline-1-lg']}
             >
-                <Link
+                <NextLink
                     href={`portfolio/${slug}`}
                     color={theme.colors.fg}
                     textDecoration="none"
@@ -34,10 +35,9 @@ export default function ProjectCard({
                         textDecoration: 'underline',
                         color: theme.colors.primary[700],
                     }}
-                    as={NextLink}
                 >
                     {name}
-                </Link>
+                </NextLink>
             </Box>
             <Text
                 textStyle="typescale-3"

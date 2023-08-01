@@ -4,8 +4,8 @@ import { Link, Box, Icon } from '@chakra-ui/react'
 import { Link as NextLink } from '@chakra-ui/next-js'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 
-import BodyText from '@/components/BodyText'
-import Heading from '@/components/Heading'
+import BodyText from '@/app/components/body-text'
+import Heading from '@/app/components/heading'
 
 export default function HomePage() {
     return (
