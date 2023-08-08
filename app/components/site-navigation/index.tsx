@@ -7,7 +7,7 @@ export default function SiteNavigation() {
     const theme = useTheme()
 
     return (
-        <Box as="nav" ml="-8px">
+        <Box as="nav" ml="-8px" aria-label="Principal">
             <List
                 display="flex"
                 gap={['baseline-1', null, null, 'baseline-1-lg']}
