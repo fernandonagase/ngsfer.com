@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import { Box, Flex, Text, useTheme } from '@chakra-ui/react'
+import { Flex, VisuallyHidden, useTheme } from '@chakra-ui/react'
 
 import ContactItem from './ContactItem'
 
@@ -23,18 +23,14 @@ export default function ContactMe() {
     const theme = useTheme()
 
     return (
-        <Flex
-            gap={itemSpacing}
-            fontFamily={theme.fonts.auxiliary}
-            alignItems="center"
-        >
-            <Text textStyle="typescale-2">Contato:</Text>
-            <Box
+        <>
+            <VisuallyHidden id="contact-me-label">Contato</VisuallyHidden>
+            <Flex
                 as="address"
                 fontStyle="normal"
-                display="flex"
                 alignItems="center"
                 gap={itemSpacing}
+                aria-labelledby="contact-me-label"
             >
                 {contactList.map((contact, index) => {
                     return (
@@ -46,7 +42,7 @@ export default function ContactMe() {
                         </Fragment>
                     )
                 })}
-            </Box>
-        </Flex>
+            </Flex>
+        </>
     )
 }

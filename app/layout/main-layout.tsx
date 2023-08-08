@@ -25,7 +25,23 @@ export default function MainLayout({ children }: MainLayoutProps) {
                     color="fg"
                 >
                     <Header />
-                    <Box as="main">
+                    <Box
+                        as="main"
+                        _after={{
+                            content: '""',
+                            display: 'block',
+                            width: '64px',
+                            height: 0,
+                            borderTop:
+                                '1px solid var(--chakra-colors-gray-500)',
+                            marginTop: [
+                                'baseline-2',
+                                null,
+                                null,
+                                'baseline-2-lg',
+                            ],
+                        }}
+                    >
                         <SkipNavContent />
                         {children}
                     </Box>
