@@ -5,7 +5,7 @@ import { getAllProjects } from '@/lib/portfolio'
 
 async function fetchProjects() {
     const projects = await getAllProjects()
-    return projects.sort((a, b) => a.slug.localeCompare(b.slug))
+    return projects.sort((a, b) => a.name.localeCompare(b.name))
 }
 
 export const metadata: Metadata = {

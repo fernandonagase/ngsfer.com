@@ -1,8 +1,0 @@
-{
-    "name": "another test project",
-    "description": "another temporary test project",
-    "skills": ["React", "Next", "Web"],
-    "thumbnail": "img1",
-    "repository": "repository",
-    "preview": "preview url"
-}

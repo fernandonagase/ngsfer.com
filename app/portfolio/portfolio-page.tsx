@@ -5,10 +5,10 @@ import { Stack } from '@chakra-ui/react'
 import BodyText from '@/app/components/body-text'
 import Heading from '@/app/components/heading'
 import ProjectCard from '@/app/components/project-card'
-import { ProjectSummary } from '@/lib/portfolio/types/project-summary'
+import { Project } from '@/lib/portfolio/types/project'
 
 type PortfolioProps = {
-    projects: ProjectSummary[]
+    projects: Project[]
 }
 
 export default function PortfolioPage({ projects }: PortfolioProps) {
@@ -20,10 +20,11 @@ export default function PortfolioPage({ projects }: PortfolioProps) {
                     {projects.map((project) => (
                         <ProjectCard
                             key={project.slug}
-                            slug={project.slug}
                             name={project.name}
                             description={project.description}
                             skills={project.skills}
+                            repositoryUrl={project.repositoryUrl}
+                            previewUrl={project.previewUrl}
                         />
                     ))}
                 </Stack>

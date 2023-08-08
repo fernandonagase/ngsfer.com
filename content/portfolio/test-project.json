@@ -1,8 +1,0 @@
-{
-    "name": "test project",
-    "description": "a temporary test project",
-    "skills": ["Java", "API", "Web"],
-    "thumbnail": "img1",
-    "repository": "repository",
-    "preview": "preview url"
-}

@@ -3,7 +3,6 @@ export type Project = {
     name: string
     description: string
     skills: string[]
-    thumbnailUrl: string
     repositoryUrl: string
     previewUrl: string
 }
