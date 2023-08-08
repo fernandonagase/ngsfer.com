@@ -1,0 +1,7 @@
+{
+    "name": "Seção de comentários interativa",
+    "description": "Seção de comentários interativa e responsiva. Projeto baseado no desafio do site Frontend Mentor.",
+    "skills": ["React", "Next.js", "Web"],
+    "repositoryUrl": "https://github.com/fernandonagase/nextjs-comments-component",
+    "previewUrl": "https://ngsfer-nextjs-comments.vercel.app/"
+}
